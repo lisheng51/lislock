@@ -118,7 +118,7 @@ class QuestionBankActivity : ComponentActivity() {
 
                 SectionTitle("远程题库")
                 Text(
-                    "填一个 https 网址，内容是题库 JSON（格式见 README）。开启守护后每 6 小时自动更新一次。",
+                    "填一个 https:// 或 http:// 网址，内容是题库 JSON（格式见 README）。开启守护后每 6 小时自动更新一次。",
                     style = MaterialTheme.typography.bodySmall,
                 )
                 TextButton(onClick = { pickingOfficial = true }) { Text("选择官方题库…") }
@@ -130,6 +130,13 @@ class QuestionBankActivity : ComponentActivity() {
                     keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Uri),
                     modifier = Modifier.fillMaxWidth(),
                 )
+                if (RemoteBankSync.isInsecure(url)) {
+                    Text(
+                        "⚠️ http 不加密，题目在传输中可能被篡改。家里局域网可以用，公网地址建议用 https。",
+                        style = MaterialTheme.typography.bodySmall,
+                        color = MaterialTheme.colorScheme.error,
+                    )
+                }
                 Spacer(Modifier.height(8.dp))
                 Row {
                     Button(

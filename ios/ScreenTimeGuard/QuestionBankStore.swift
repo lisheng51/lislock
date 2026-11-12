@@ -110,6 +110,9 @@ final class QuestionBankStore: ObservableObject {
         remote = load(remoteURL)
     }
 
+    /// http 不加密，界面上提醒家长
+    var remoteIsInsecure: Bool { remoteAddress.lowercased().hasPrefix("http://") }
+
     /// 出题时使用的全部题目
     var allQuestions: [BankQuestion] { (builtinEnabled ? builtin : []) + custom + remote }
 
@@ -121,8 +124,8 @@ final class QuestionBankStore: ObservableObject {
         isUpdating = true
         defer { isUpdating = false }
         do {
-            guard let url = URL(string: address), url.scheme?.lowercased() == "https" else {
-                throw BankError("网址必须以 https:// 开头")
+            guard let url = URL(string: address), ["https", "http"].contains(url.scheme?.lowercased() ?? "") else {
+                throw BankError("网址必须以 https:// 或 http:// 开头")
             }
             var request = URLRequest(url: url, timeoutInterval: 15)
             request.setValue("application/json", forHTTPHeaderField: "Accept")

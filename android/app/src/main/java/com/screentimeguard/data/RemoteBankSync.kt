@@ -10,7 +10,7 @@ import java.util.concurrent.atomic.AtomicBoolean
 
 /**
  * 从网址下载远程题库。
- *  - 只允许 https
+ *  - 支持 https 和 http（http 不加密，界面上会提醒家长）
  *  - 下载后先完整校验，格式不对就保留旧的缓存，不会把题库弄坏
  *  - [refreshIfStale] 由 GuardService 定期调用：成功后 6 小时再更新，失败后 30 分钟重试
  */
@@ -44,7 +44,7 @@ object RemoteBankSync {
         bank.remoteAttemptAt = System.currentTimeMillis()
         executor.execute {
             val result = runCatching {
-                require(url.startsWith("https://", ignoreCase = true)) { "网址必须以 https:// 开头" }
+                require(isSupportedUrl(url)) { "网址必须以 https:// 或 http:// 开头" }
                 val list = BankJson.parse(download(url))
                 require(list.isNotEmpty()) { "题库是空的" }
                 bank.saveRemote(list)
@@ -55,6 +55,11 @@ object RemoteBankSync {
             onDone?.let { cb -> main.post { cb(result) } }
         }
     }
+
+    fun isSupportedUrl(url: String) =
+        url.startsWith("https://", ignoreCase = true) || url.startsWith("http://", ignoreCase = true)
+
+    fun isInsecure(url: String) = url.trim().startsWith("http://", ignoreCase = true)
 
     private fun download(url: String): String {
         val conn = URL(url).openConnection() as HttpURLConnection

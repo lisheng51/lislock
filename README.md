@@ -117,7 +117,7 @@ open ScreenTimeGuard.xcodeproj
 |---|---|
 | 内置题库 | `shared/questions.json`（荷兰语，7 题），打包进 App，可在题库管理中关闭 |
 | 自定义题目 | 家长在 App 里「设置 → 管理题库」中添加 / 编辑 / 删除，或粘贴 JSON 批量导入 |
-| 远程题库 | 填一个 https 网址，App 下载后缓存；Android 守护运行时每 6 小时更新，iOS 打开 App 时每 6 小时更新 |
+| 远程题库 | 填一个 https:// 或 http:// 网址，App 下载后缓存；Android 守护运行时每 6 小时更新，iOS 打开 App 时每 6 小时更新 |
 
 打开「只出题库题」后不再出算术题。否则题库题的占比随难度降低：Lv.0 50% → Lv.3 20%。
 
@@ -151,7 +151,7 @@ https://raw.githubusercontent.com/lisheng51/lislock/main/banks/all.json
 
 ### 用自己的远程题库
 
-任何能通过 **https 直接返回 JSON 原文**的地址都可以，例如 GitHub Gist（点 Raw 复制网址）、公开仓库里的文件、自己的服务器或对象存储。
+任何能**直接返回 JSON 原文**的 https / http 地址都可以，例如 GitHub Gist（点 Raw 复制网址）、公开仓库里的文件、自己的服务器或对象存储。
 
 ## 路线图
 

@@ -28,6 +28,12 @@ targets:
         GENERATE_INFOPLIST_FILE: YES
         INFOPLIST_KEY_CFBundleDisplayName: 屏幕时间守卫
         INFOPLIST_KEY_UILaunchScreen_Generation: YES
+    # 允许 http 加载远程题库（如家里 NAS / 局域网服务器）
+    info:
+      path: ScreenTimeGuard/Info.plist
+      properties:
+        NSAppTransportSecurity:
+          NSAllowsArbitraryLoads: true
     dependencies:
       - target: MonitorExtension
       - target: ShieldConfigExtension

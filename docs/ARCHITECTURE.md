@@ -19,7 +19,7 @@
 - 每次解锁需答对 `questionCount` 道题（默认 3）
 - 题目随机从两类中抽取：
   - 算术题：两位数加减、一位数乘法，四个选项
-  - 题库题：内置（`shared/questions.json`）+ 自定义（App 内编辑）+ 远程（https 网址下载缓存）
+  - 题库题：内置（`shared/questions.json`）+ 自定义（App 内编辑）+ 远程（https / http 网址下载缓存）
 - 答错一道 → 整组重新抽题（防止反复猜）
 
 ## Android
@@ -32,7 +32,7 @@
 | `Prefs` | SharedPreferences：上限、题数、已用时长、锁定状态 |
 | `QuizGenerator` | 生成题目（算术题 + 题库题，按难度调整比例） |
 | `QuestionBank` | 题库三个来源的读写、JSON 校验 |
-| `RemoteBankSync` | 下载远程题库（只允许 https，≤1 MB，校验通过才替换缓存） |
+| `RemoteBankSync` | 下载远程题库（https 或 http，≤1 MB，校验通过才替换缓存） |
 | `QuestionBankActivity` | 题库管理界面（需家长验证后从设置页进入） |
 
 需要的权限：

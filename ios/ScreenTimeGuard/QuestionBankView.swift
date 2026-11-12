@@ -47,12 +47,16 @@ struct QuestionBankView: View {
             } header: {
                 Text("远程题库")
             } footer: {
+                if store.remoteIsInsecure {
+                    Text("⚠️ http 不加密，题目在传输中可能被篡改。家里局域网可以用，公网地址建议用 https。")
+                        .foregroundStyle(.orange)
+                }
                 if let error = store.remoteError {
                     Text("更新失败：\(error)").foregroundStyle(.red)
                 } else if let date = store.remoteUpdatedAt, !store.remote.isEmpty {
                     Text("已加载 \(store.remote.count) 道题，更新于 \(date.formatted(date: .numeric, time: .shortened))")
                 } else {
-                    Text("填一个 https 网址，内容是题库 JSON（格式见 README）。打开 App 时每 6 小时自动更新一次。")
+                    Text("填一个 https:// 或 http:// 网址，内容是题库 JSON（格式见 README）。打开 App 时每 6 小时自动更新一次。")
                 }
             }
 
