@@ -72,6 +72,10 @@ class ParentPin(context: Context) {
     private fun ByteArray.b64() = Base64.encodeToString(this, Base64.NO_WRAP)
 
     companion object {
+        private const val KEY_HASH = "hash"
+        private const val KEY_SALT = "salt"
+        private const val KEY_FAILS = "fails"
+        private const val KEY_LOCKOUT_UNTIL = "lockout_until"
         const val MAX_ATTEMPTS = 5
         const val LOCKOUT_MS = 60_000L
         fun isValidFormat(pin: String) = pin.length in 4..6 && pin.all(Char::isDigit)
