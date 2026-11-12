@@ -2452,6 +2452,16 @@
         "windenergie"
       ],
       "answer": 3
+    },
+    {
+      "q": "Wie is de koning van Nederland?",
+      "options": [
+        "Beatrix",
+        "Willem-Alexander",
+        "Juliana",
+        "Willem van Oranje"
+      ],
+      "answer": 1
     }
   ]
 }
