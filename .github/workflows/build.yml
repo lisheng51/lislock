@@ -11,8 +11,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Validate banks and check all.json is up to date
-        run: python3 tools/build_banks.py --check
+      # 只校验题目格式；all.json 由 banks.yml 在 main 上自动重新生成
+      - name: Validate banks
+        run: python3 tools/build_banks.py
 
   android:
     name: Android APK

@@ -1,0 +1,43 @@
+name: Rebuild question banks
+
+# banks/ 里的题库有改动并推送到 main 时：自动校验，重新生成 banks/all.json 并提交。
+# 这样直接在 GitHub 网页上改 nl-*.json 就行，不用在电脑上运行脚本。
+on:
+  push:
+    branches: [main]
+    paths:
+      - "banks/**.json"
+      - "!banks/all.json"
+      - "tools/build_banks.py"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: rebuild-banks
+  cancel-in-progress: false
+
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Validate and rebuild all.json
+        run: python3 tools/build_banks.py
+
+      - name: Commit all.json if it changed
+        run: |
+          if git diff --quiet -- banks/all.json; then
+            echo "all.json 已经是最新的"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add banks/all.json
+          git commit -m "Rebuild banks/all.json"
+          git pull --rebase origin main
+          git push origin HEAD:main
