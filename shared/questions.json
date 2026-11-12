@@ -1,12 +1,74 @@
 {
   "version": 1,
+  "title": "Ingebouwde vragen",
   "questions": [
-    { "q": "中国的首都是哪座城市？", "options": ["上海", "北京", "广州", "深圳"], "answer": 1 },
-    { "q": "一年有多少个月？", "options": ["10", "11", "12", "13"], "answer": 2 },
-    { "q": "水在标准大气压下多少摄氏度沸腾？", "options": ["90", "100", "110", "120"], "answer": 1 },
-    { "q": "太阳系中最大的行星是？", "options": ["地球", "火星", "木星", "土星"], "answer": 2 },
-    { "q": "\"床前明月光\" 的下一句是？", "options": ["疑是地上霜", "举头望明月", "低头思故乡", "白日依山尽"], "answer": 0 },
-    { "q": "一小时有多少分钟？", "options": ["30", "60", "90", "100"], "answer": 1 },
-    { "q": "现在放下手机休息一下，好吗？", "options": ["好的", "再玩一会儿"], "answer": 0 }
+    {
+      "q": "Wat is de hoofdstad van Nederland?",
+      "options": [
+        "Utrecht",
+        "Amsterdam",
+        "Den Haag",
+        "Rotterdam"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Hoeveel maanden heeft een jaar?",
+      "options": [
+        "13",
+        "10",
+        "12",
+        "11"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "Bij hoeveel graden Celsius kookt water?",
+      "options": [
+        "100 °C",
+        "90 °C",
+        "50 °C",
+        "120 °C"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Hoeveel dagen heeft een week?",
+      "options": [
+        "6",
+        "8",
+        "7",
+        "5"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "Welke kleur krijg je als je blauw en geel mengt?",
+      "options": [
+        "bruin",
+        "oranje",
+        "paars",
+        "groen"
+      ],
+      "answer": 3
+    },
+    {
+      "q": "Hoeveel minuten heeft een uur?",
+      "options": [
+        "90",
+        "30",
+        "100",
+        "60"
+      ],
+      "answer": 3
+    },
+    {
+      "q": "Zullen we even pauze nemen van de telefoon?",
+      "options": [
+        "Ja, goed idee!",
+        "Nee, nog even doorgaan"
+      ],
+      "answer": 0
+    }
   ]
 }

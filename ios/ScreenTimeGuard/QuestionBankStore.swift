@@ -63,16 +63,11 @@ struct BankError: LocalizedError {
 enum OfficialBanks {
     private static let base = "https://raw.githubusercontent.com/lisheng51/lislock/main/banks/"
     static let list: [(name: String, url: String)] = [
-        ("全部题库（合并）", base + "all.json"),
-        ("英语单词", base + "english.json"),
-        ("古诗词", base + "poetry.json"),
-        ("生活常识", base + "general.json"),
-        ("自然科学", base + "science.json"),
-        ("数学应用题", base + "math.json"),
-        ("🇳🇱 Groep 7/8 – Alles", base + "groep78.json"),
-        ("🇳🇱 Groep 7/8 – Taal", base + "nl-taal.json"),
-        ("🇳🇱 Groep 7/8 – Rekenen", base + "nl-rekenen.json"),
-        ("🇳🇱 Groep 7/8 – Wereldoriëntatie", base + "nl-wereld.json"),
+        ("Groep 7/8 – Alles", base + "all.json"),
+        ("Taal", base + "nl-taal.json"),
+        ("Rekenen", base + "nl-rekenen.json"),
+        ("Wereldoriëntatie", base + "nl-wereld.json"),
+        ("Engels", base + "nl-engels.json"),
     ]
 }
 

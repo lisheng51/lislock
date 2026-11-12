@@ -1,7 +1,5 @@
 #!/usr/bin/env python3
-"""校验 banks/ 下的各科题库，并生成合并题库：
-    all.json      所有科目
-    groep78.json  荷兰小学 groep 7/8（nl-*.json）
+"""校验 banks/ 下的各科题库，并合并生成 banks/all.json。
 
 用法：
     python3 tools/build_banks.py          # 校验并重新生成 all.json
@@ -17,8 +15,7 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 BANKS = ROOT / "banks"
 # 合并输出文件 → (标题, 说明, 包含哪些源文件的 glob)
 BUNDLES = {
-    "all.json": ("全部题库", "所有科目合并", "*.json"),
-    "groep78.json": ("Groep 7/8 – Alles", "Taal, rekenen en wereldoriëntatie voor groep 7/8", "nl-*.json"),
+    "all.json": ("Groep 7/8 – Alles", "Taal, rekenen, wereldoriëntatie en Engels voor groep 7/8", "*.json"),
 }
 MAX_QUESTIONS = 2000
 MAX_BYTES = 1_000_000

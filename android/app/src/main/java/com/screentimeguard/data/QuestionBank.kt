@@ -65,16 +65,11 @@ object BankJson {
 object OfficialBanks {
     private const val BASE = "https://raw.githubusercontent.com/lisheng51/lislock/main/banks/"
     val list = listOf(
-        "全部题库（合并）" to BASE + "all.json",
-        "英语单词" to BASE + "english.json",
-        "古诗词" to BASE + "poetry.json",
-        "生活常识" to BASE + "general.json",
-        "自然科学" to BASE + "science.json",
-        "数学应用题" to BASE + "math.json",
-        "🇳🇱 Groep 7/8 – Alles" to BASE + "groep78.json",
-        "🇳🇱 Groep 7/8 – Taal" to BASE + "nl-taal.json",
-        "🇳🇱 Groep 7/8 – Rekenen" to BASE + "nl-rekenen.json",
-        "🇳🇱 Groep 7/8 – Wereldoriëntatie" to BASE + "nl-wereld.json",
+        "Groep 7/8 – Alles" to BASE + "all.json",
+        "Taal" to BASE + "nl-taal.json",
+        "Rekenen" to BASE + "nl-rekenen.json",
+        "Wereldoriëntatie" to BASE + "nl-wereld.json",
+        "Engels" to BASE + "nl-engels.json",
     )
 }
 

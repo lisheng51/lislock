@@ -114,7 +114,7 @@ open ScreenTimeGuard.xcodeproj
 
 | 来源 | 说明 |
 |---|---|
-| 内置题库 | `shared/questions.json`，打包进 App，可在题库管理中关闭 |
+| 内置题库 | `shared/questions.json`（荷兰语，7 题），打包进 App，可在题库管理中关闭 |
 | 自定义题目 | 家长在 App 里「设置 → 管理题库」中添加 / 编辑 / 删除，或粘贴 JSON 批量导入 |
 | 远程题库 | 填一个 https 网址，App 下载后缓存；Android 守护运行时每 6 小时更新，iOS 打开 App 时每 6 小时更新 |
 
@@ -126,8 +126,8 @@ open ScreenTimeGuard.xcodeproj
 {
   "version": 1,
   "questions": [
-    { "q": "apple 是什么意思？", "options": ["香蕉", "苹果", "橙子", "葡萄"], "answer": 1 },
-    { "q": "3 × 7 = ?", "options": ["21", "24"], "answer": 0 }
+    { "q": "Wat is de hoofdstad van Friesland?", "options": ["Sneek", "Leeuwarden", "Groningen", "Assen"], "answer": 1 },
+    { "q": "Hoeveel is 25% van 240?", "options": ["60", "48"], "answer": 0 }
   ]
 }
 ```
@@ -139,8 +139,8 @@ open ScreenTimeGuard.xcodeproj
 
 ### 官方题库
 
-仓库的 [`banks/`](banks/) 目录里有现成的题库（英语单词、古诗词、生活常识、自然科学、数学应用题，以及荷兰小学 **groep 7/8** 的 Taal / Rekenen / Wereldoriëntatie，共 346 题）。
-在 App 的题库管理里点 **「选择官方题库」** 就能一键使用，例如全部题库：
+仓库的 [`banks/`](banks/) 目录里有现成的**荷兰语**题库，面向荷兰小学 **groep 7/8**：Taal、Rekenen、Wereldoriëntatie、Engels。
+在 App 的题库管理里点 **「选择官方题库」** 就能一键使用，例如全部（Groep 7/8 – Alles）：
 
 ```
 https://raw.githubusercontent.com/lisheng51/lislock/main/banks/all.json

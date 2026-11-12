@@ -1,0 +1,1217 @@
+{
+  "version": 1,
+  "title": "Groep 7/8 – Engels",
+  "description": "Engelse woordjes, zinnen en eenvoudige grammatica",
+  "questions": [
+    {
+      "q": "Wat betekent ‘apple’?",
+      "options": [
+        "druif",
+        "sinaasappel",
+        "watermeloen",
+        "appel"
+      ],
+      "answer": 3
+    },
+    {
+      "q": "Wat betekent ‘banana’?",
+      "options": [
+        "appel",
+        "perzik",
+        "banaan",
+        "druif"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "Wat betekent ‘orange’?",
+      "options": [
+        "aardbei",
+        "appel",
+        "sinaasappel",
+        "watermeloen"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "Wat betekent ‘grape’?",
+      "options": [
+        "aardbei",
+        "druif",
+        "perzik",
+        "appel"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Wat betekent ‘watermelon’?",
+      "options": [
+        "perzik",
+        "aardbei",
+        "druif",
+        "watermeloen"
+      ],
+      "answer": 3
+    },
+    {
+      "q": "Wat betekent ‘peach’?",
+      "options": [
+        "watermeloen",
+        "banaan",
+        "perzik",
+        "sinaasappel"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "Wat betekent ‘pear’?",
+      "options": [
+        "aardbei",
+        "sinaasappel",
+        "peer",
+        "watermeloen"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "Wat betekent ‘strawberry’?",
+      "options": [
+        "sinaasappel",
+        "watermeloen",
+        "appel",
+        "aardbei"
+      ],
+      "answer": 3
+    },
+    {
+      "q": "Hoe zeg je ‘druif’ in het Engels?",
+      "options": [
+        "grape",
+        "peach",
+        "watermelon",
+        "orange"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Hoe zeg je ‘aardbei’ in het Engels?",
+      "options": [
+        "banana",
+        "strawberry",
+        "pear",
+        "orange"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Hoe zeg je ‘perzik’ in het Engels?",
+      "options": [
+        "peach",
+        "watermelon",
+        "apple",
+        "orange"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Wat betekent ‘dog’?",
+      "options": [
+        "vogel",
+        "aap",
+        "hond",
+        "kat"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "Wat betekent ‘cat’?",
+      "options": [
+        "konijn",
+        "olifant",
+        "schaap",
+        "kat"
+      ],
+      "answer": 3
+    },
+    {
+      "q": "Wat betekent ‘bird’?",
+      "options": [
+        "vogel",
+        "koe",
+        "konijn",
+        "paard"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Wat betekent ‘rabbit’?",
+      "options": [
+        "eend",
+        "kat",
+        "schaap",
+        "konijn"
+      ],
+      "answer": 3
+    },
+    {
+      "q": "Wat betekent ‘elephant’?",
+      "options": [
+        "olifant",
+        "kat",
+        "paard",
+        "hond"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Wat betekent ‘monkey’?",
+      "options": [
+        "paard",
+        "olifant",
+        "aap",
+        "eend"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "Wat betekent ‘horse’?",
+      "options": [
+        "vogel",
+        "olifant",
+        "aap",
+        "paard"
+      ],
+      "answer": 3
+    },
+    {
+      "q": "Wat betekent ‘duck’?",
+      "options": [
+        "eend",
+        "olifant",
+        "kat",
+        "konijn"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Wat betekent ‘sheep’?",
+      "options": [
+        "schaap",
+        "kat",
+        "eend",
+        "koe"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Wat betekent ‘cow’?",
+      "options": [
+        "koe",
+        "vogel",
+        "eend",
+        "paard"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Hoe zeg je ‘aap’ in het Engels?",
+      "options": [
+        "sheep",
+        "cat",
+        "monkey",
+        "bird"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "Hoe zeg je ‘paard’ in het Engels?",
+      "options": [
+        "horse",
+        "sheep",
+        "duck",
+        "dog"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Hoe zeg je ‘konijn’ in het Engels?",
+      "options": [
+        "rabbit",
+        "dog",
+        "elephant",
+        "bird"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Wat betekent ‘red’?",
+      "options": [
+        "wit",
+        "paars",
+        "groen",
+        "rood"
+      ],
+      "answer": 3
+    },
+    {
+      "q": "Wat betekent ‘blue’?",
+      "options": [
+        "paars",
+        "roze",
+        "zwart",
+        "blauw"
+      ],
+      "answer": 3
+    },
+    {
+      "q": "Wat betekent ‘green’?",
+      "options": [
+        "blauw",
+        "groen",
+        "roze",
+        "rood"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Wat betekent ‘yellow’?",
+      "options": [
+        "rood",
+        "groen",
+        "wit",
+        "geel"
+      ],
+      "answer": 3
+    },
+    {
+      "q": "Wat betekent ‘black’?",
+      "options": [
+        "blauw",
+        "roze",
+        "wit",
+        "zwart"
+      ],
+      "answer": 3
+    },
+    {
+      "q": "Wat betekent ‘white’?",
+      "options": [
+        "blauw",
+        "rood",
+        "wit",
+        "zwart"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "Wat betekent ‘purple’?",
+      "options": [
+        "groen",
+        "zwart",
+        "paars",
+        "roze"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "Wat betekent ‘pink’?",
+      "options": [
+        "roze",
+        "geel",
+        "paars",
+        "wit"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Hoe zeg je ‘blauw’ in het Engels?",
+      "options": [
+        "purple",
+        "blue",
+        "yellow",
+        "pink"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Hoe zeg je ‘roze’ in het Engels?",
+      "options": [
+        "black",
+        "blue",
+        "pink",
+        "red"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "Hoe zeg je ‘rood’ in het Engels?",
+      "options": [
+        "yellow",
+        "pink",
+        "white",
+        "red"
+      ],
+      "answer": 3
+    },
+    {
+      "q": "Wat betekent ‘book’?",
+      "options": [
+        "boek",
+        "gum",
+        "liniaal",
+        "leerling"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Wat betekent ‘pencil’?",
+      "options": [
+        "leraar",
+        "potlood",
+        "liniaal",
+        "stoel"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Wat betekent ‘ruler’?",
+      "options": [
+        "stoel",
+        "liniaal",
+        "huiswerk",
+        "leraar"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Wat betekent ‘eraser’?",
+      "options": [
+        "klaslokaal",
+        "gum",
+        "boek",
+        "liniaal"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Wat betekent ‘chair’?",
+      "options": [
+        "huiswerk",
+        "stoel",
+        "leerling",
+        "gum"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Wat betekent ‘teacher’?",
+      "options": [
+        "boek",
+        "gum",
+        "leraar",
+        "potlood"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "Wat betekent ‘pupil’?",
+      "options": [
+        "stoel",
+        "huiswerk",
+        "gum",
+        "leerling"
+      ],
+      "answer": 3
+    },
+    {
+      "q": "Wat betekent ‘classroom’?",
+      "options": [
+        "leerling",
+        "leraar",
+        "potlood",
+        "klaslokaal"
+      ],
+      "answer": 3
+    },
+    {
+      "q": "Wat betekent ‘homework’?",
+      "options": [
+        "gum",
+        "klaslokaal",
+        "huiswerk",
+        "potlood"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "Hoe zeg je ‘klaslokaal’ in het Engels?",
+      "options": [
+        "homework",
+        "teacher",
+        "classroom",
+        "pencil"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "Hoe zeg je ‘leerling’ in het Engels?",
+      "options": [
+        "pupil",
+        "eraser",
+        "chair",
+        "ruler"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Hoe zeg je ‘leraar’ in het Engels?",
+      "options": [
+        "chair",
+        "pencil",
+        "teacher",
+        "pupil"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "Wat betekent ‘father’?",
+      "options": [
+        "oma",
+        "vader",
+        "vriend",
+        "broer"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Wat betekent ‘mother’?",
+      "options": [
+        "vader",
+        "moeder",
+        "zus",
+        "opa"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Wat betekent ‘brother’?",
+      "options": [
+        "vriend",
+        "zus",
+        "broer",
+        "oma"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "Wat betekent ‘sister’?",
+      "options": [
+        "vriend",
+        "zus",
+        "opa",
+        "tante"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Wat betekent ‘grandfather’?",
+      "options": [
+        "oma",
+        "oom",
+        "broer",
+        "opa"
+      ],
+      "answer": 3
+    },
+    {
+      "q": "Wat betekent ‘grandmother’?",
+      "options": [
+        "oom",
+        "moeder",
+        "oma",
+        "vader"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "Wat betekent ‘friend’?",
+      "options": [
+        "vriend",
+        "moeder",
+        "vader",
+        "opa"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Wat betekent ‘uncle’?",
+      "options": [
+        "opa",
+        "vader",
+        "oom",
+        "moeder"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "Wat betekent ‘aunt’?",
+      "options": [
+        "vader",
+        "tante",
+        "vriend",
+        "oom"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Hoe zeg je ‘moeder’ in het Engels?",
+      "options": [
+        "mother",
+        "grandfather",
+        "friend",
+        "sister"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Hoe zeg je ‘oom’ in het Engels?",
+      "options": [
+        "sister",
+        "uncle",
+        "grandfather",
+        "grandmother"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Hoe zeg je ‘broer’ in het Engels?",
+      "options": [
+        "grandfather",
+        "mother",
+        "aunt",
+        "brother"
+      ],
+      "answer": 3
+    },
+    {
+      "q": "Wat betekent ‘sun’?",
+      "options": [
+        "ster",
+        "zon",
+        "sneeuw",
+        "rivier"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Wat betekent ‘moon’?",
+      "options": [
+        "bloem",
+        "boom",
+        "berg",
+        "maan"
+      ],
+      "answer": 3
+    },
+    {
+      "q": "Wat betekent ‘star’?",
+      "options": [
+        "lucht",
+        "bloem",
+        "ster",
+        "maan"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "Wat betekent ‘sky’?",
+      "options": [
+        "regen",
+        "maan",
+        "lucht",
+        "berg"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "Wat betekent ‘tree’?",
+      "options": [
+        "berg",
+        "sneeuw",
+        "boom",
+        "ster"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "Wat betekent ‘flower’?",
+      "options": [
+        "sneeuw",
+        "rivier",
+        "bloem",
+        "maan"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "Wat betekent ‘river’?",
+      "options": [
+        "lucht",
+        "regen",
+        "sneeuw",
+        "rivier"
+      ],
+      "answer": 3
+    },
+    {
+      "q": "Wat betekent ‘mountain’?",
+      "options": [
+        "sneeuw",
+        "boom",
+        "regen",
+        "berg"
+      ],
+      "answer": 3
+    },
+    {
+      "q": "Wat betekent ‘rain’?",
+      "options": [
+        "maan",
+        "ster",
+        "regen",
+        "sneeuw"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "Wat betekent ‘snow’?",
+      "options": [
+        "sneeuw",
+        "boom",
+        "ster",
+        "rivier"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Hoe zeg je ‘rivier’ in het Engels?",
+      "options": [
+        "flower",
+        "star",
+        "moon",
+        "river"
+      ],
+      "answer": 3
+    },
+    {
+      "q": "Hoe zeg je ‘ster’ in het Engels?",
+      "options": [
+        "mountain",
+        "sky",
+        "moon",
+        "star"
+      ],
+      "answer": 3
+    },
+    {
+      "q": "Hoe zeg je ‘berg’ in het Engels?",
+      "options": [
+        "moon",
+        "snow",
+        "mountain",
+        "tree"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "Wat betekent ‘milk’?",
+      "options": [
+        "taart",
+        "brood",
+        "kip",
+        "melk"
+      ],
+      "answer": 3
+    },
+    {
+      "q": "Wat betekent ‘bread’?",
+      "options": [
+        "kaas",
+        "ei",
+        "sap",
+        "brood"
+      ],
+      "answer": 3
+    },
+    {
+      "q": "Wat betekent ‘egg’?",
+      "options": [
+        "melk",
+        "brood",
+        "kaas",
+        "ei"
+      ],
+      "answer": 3
+    },
+    {
+      "q": "Wat betekent ‘cheese’?",
+      "options": [
+        "kaas",
+        "rijst",
+        "kip",
+        "ei"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Wat betekent ‘cake’?",
+      "options": [
+        "brood",
+        "taart",
+        "sap",
+        "rijst"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Wat betekent ‘juice’?",
+      "options": [
+        "ei",
+        "rijst",
+        "melk",
+        "sap"
+      ],
+      "answer": 3
+    },
+    {
+      "q": "Wat betekent ‘rice’?",
+      "options": [
+        "kaas",
+        "taart",
+        "rijst",
+        "brood"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "Wat betekent ‘chicken’?",
+      "options": [
+        "kip",
+        "sap",
+        "kaas",
+        "taart"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Hoe zeg je ‘kaas’ in het Engels?",
+      "options": [
+        "rice",
+        "cheese",
+        "bread",
+        "chicken"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Hoe zeg je ‘brood’ in het Engels?",
+      "options": [
+        "milk",
+        "chicken",
+        "egg",
+        "bread"
+      ],
+      "answer": 3
+    },
+    {
+      "q": "Hoe zeg je ‘ei’ in het Engels?",
+      "options": [
+        "milk",
+        "cake",
+        "bread",
+        "egg"
+      ],
+      "answer": 3
+    },
+    {
+      "q": "Wat betekent ‘happy’?",
+      "options": [
+        "blij",
+        "boos",
+        "snel",
+        "moe"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Wat betekent ‘sad’?",
+      "options": [
+        "verdrietig",
+        "boos",
+        "groot",
+        "blij"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Wat betekent ‘big’?",
+      "options": [
+        "groot",
+        "blij",
+        "klein",
+        "snel"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Wat betekent ‘small’?",
+      "options": [
+        "blij",
+        "klein",
+        "groot",
+        "koud"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Wat betekent ‘cold’?",
+      "options": [
+        "klein",
+        "langzaam",
+        "blij",
+        "koud"
+      ],
+      "answer": 3
+    },
+    {
+      "q": "Wat betekent ‘fast’?",
+      "options": [
+        "klein",
+        "moe",
+        "verdrietig",
+        "snel"
+      ],
+      "answer": 3
+    },
+    {
+      "q": "Wat betekent ‘slow’?",
+      "options": [
+        "groot",
+        "klein",
+        "verdrietig",
+        "langzaam"
+      ],
+      "answer": 3
+    },
+    {
+      "q": "Wat betekent ‘beautiful’?",
+      "options": [
+        "snel",
+        "moe",
+        "mooi",
+        "koud"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "Wat betekent ‘angry’?",
+      "options": [
+        "snel",
+        "langzaam",
+        "boos",
+        "mooi"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "Wat betekent ‘tired’?",
+      "options": [
+        "groot",
+        "moe",
+        "blij",
+        "langzaam"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Hoe zeg je ‘boos’ in het Engels?",
+      "options": [
+        "sad",
+        "small",
+        "happy",
+        "angry"
+      ],
+      "answer": 3
+    },
+    {
+      "q": "Hoe zeg je ‘moe’ in het Engels?",
+      "options": [
+        "sad",
+        "tired",
+        "slow",
+        "beautiful"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Hoe zeg je ‘blij’ in het Engels?",
+      "options": [
+        "angry",
+        "sad",
+        "happy",
+        "cold"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "Wat betekent ‘Monday’?",
+      "options": [
+        "zondag",
+        "dinsdag",
+        "zaterdag",
+        "maandag"
+      ],
+      "answer": 3
+    },
+    {
+      "q": "Wat betekent ‘Tuesday’?",
+      "options": [
+        "zondag",
+        "dinsdag",
+        "maandag",
+        "donderdag"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Wat betekent ‘Wednesday’?",
+      "options": [
+        "vrijdag",
+        "dinsdag",
+        "woensdag",
+        "zaterdag"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "Wat betekent ‘Thursday’?",
+      "options": [
+        "maandag",
+        "woensdag",
+        "donderdag",
+        "zondag"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "Wat betekent ‘Friday’?",
+      "options": [
+        "zondag",
+        "zaterdag",
+        "vrijdag",
+        "woensdag"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "Wat betekent ‘Saturday’?",
+      "options": [
+        "maandag",
+        "woensdag",
+        "donderdag",
+        "zaterdag"
+      ],
+      "answer": 3
+    },
+    {
+      "q": "Wat betekent ‘Sunday’?",
+      "options": [
+        "zondag",
+        "woensdag",
+        "zaterdag",
+        "donderdag"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Hoe zeg je ‘donderdag’ in het Engels?",
+      "options": [
+        "Wednesday",
+        "Tuesday",
+        "Thursday",
+        "Monday"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "Hoe zeg je ‘maandag’ in het Engels?",
+      "options": [
+        "Sunday",
+        "Monday",
+        "Friday",
+        "Tuesday"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Hoe zeg je ‘vrijdag’ in het Engels?",
+      "options": [
+        "Friday",
+        "Saturday",
+        "Monday",
+        "Tuesday"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Wat betekent ‘How old are you?’",
+      "options": [
+        "Hoe heet je?",
+        "Hoe gaat het met je?",
+        "Hoe oud ben je?",
+        "Waar woon je?"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "Wat betekent ‘What time is it?’",
+      "options": [
+        "Wat is er aan de hand?",
+        "Welke dag is het?",
+        "Hoe lang duurt het?",
+        "Hoe laat is het?"
+      ],
+      "answer": 3
+    },
+    {
+      "q": "Wat betekent ‘I am hungry.’",
+      "options": [
+        "Ik heb honger.",
+        "Ik ben moe.",
+        "Ik ben boos.",
+        "Ik heb dorst."
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Wat betekent ‘Where do you live?’",
+      "options": [
+        "Waar ga je heen?",
+        "Wanneer kom je?",
+        "Waar woon je?",
+        "Waar ben je?"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "Wat betekent ‘Can I help you?’",
+      "options": [
+        "Wil je spelen?",
+        "Mag ik gaan?",
+        "Kun je mij helpen?",
+        "Kan ik je helpen?"
+      ],
+      "answer": 3
+    },
+    {
+      "q": "Wat betekent ‘See you tomorrow!’",
+      "options": [
+        "Goedemorgen!",
+        "Tot morgen!",
+        "Tot straks!",
+        "Fijn weekend!"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Wat betekent ‘Nice to meet you.’",
+      "options": [
+        "Leuk je te ontmoeten.",
+        "Wat een mooie dag.",
+        "Leuk je weer te zien.",
+        "Ik mis je."
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Kies het goede woord: She ___ a dog.",
+      "options": [
+        "are",
+        "have",
+        "has",
+        "is"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "Kies het goede woord: They ___ playing football.",
+      "options": [
+        "be",
+        "am",
+        "is",
+        "are"
+      ],
+      "answer": 3
+    },
+    {
+      "q": "Kies het goede woord: I ___ to school yesterday.",
+      "options": [
+        "go",
+        "goes",
+        "went",
+        "gone"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "Kies het goede woord: Yesterday we ___ football.",
+      "options": [
+        "playing",
+        "play",
+        "plays",
+        "played"
+      ],
+      "answer": 3
+    },
+    {
+      "q": "Kies het goede woord: He ___ not like spinach.",
+      "options": [
+        "are",
+        "does",
+        "do",
+        "is"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Wat is het meervoud van ‘child’?",
+      "options": [
+        "childes",
+        "children",
+        "childs",
+        "childrens"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Wat is het meervoud van ‘mouse’?",
+      "options": [
+        "mice",
+        "meese",
+        "mouses",
+        "mousen"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Wat is het meervoud van ‘foot’?",
+      "options": [
+        "feets",
+        "footen",
+        "foots",
+        "feet"
+      ],
+      "answer": 3
+    }
+  ]
+}
