@@ -17,3 +17,8 @@ DerivedData/
 
 # misc
 .DS_Store
+
+# 签名密钥绝不能提交
+*.jks
+*.keystore
+keystore.properties

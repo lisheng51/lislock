@@ -26,7 +26,8 @@ jobs:
       - uses: gradle/actions/setup-gradle@v4
       - name: Build debug APK
         working-directory: android
-        run: ./gradlew assembleDebug --no-daemon
+        # 同时编译 release（不签名），提前发现代码压缩（R8）的问题
+        run: ./gradlew assembleDebug assembleRelease --no-daemon
       - uses: actions/upload-artifact@v4
         with:
           name: lislock-debug-apk
