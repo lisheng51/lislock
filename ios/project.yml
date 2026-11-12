@@ -1,0 +1,82 @@
+# 用 XcodeGen 生成 Xcode 工程：brew install xcodegen && xcodegen generate
+# 把下面的 bundleIdPrefix / APP_GROUP 改成你自己的
+name: ScreenTimeGuard
+options:
+  bundleIdPrefix: com.example
+  deploymentTarget:
+    iOS: "16.0"
+settings:
+  base:
+    SWIFT_VERSION: "5.9"
+    MARKETING_VERSION: "0.1.0"
+    CURRENT_PROJECT_VERSION: "1"
+    APP_GROUP: group.com.example.screentimeguard
+
+targets:
+  ScreenTimeGuard:
+    type: application
+    platform: iOS
+    sources:
+      - ScreenTimeGuard
+      - Shared
+      - path: ../shared/questions.json
+        buildPhase: resources
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.example.screentimeguard
+        CODE_SIGN_ENTITLEMENTS: ScreenTimeGuard/ScreenTimeGuard.entitlements
+        GENERATE_INFOPLIST_FILE: YES
+        INFOPLIST_KEY_CFBundleDisplayName: 屏幕时间守卫
+        INFOPLIST_KEY_UILaunchScreen_Generation: YES
+    dependencies:
+      - target: MonitorExtension
+      - target: ShieldConfigExtension
+      - target: ShieldActionExtension
+
+  MonitorExtension:
+    type: app-extension
+    platform: iOS
+    sources: [MonitorExtension, Shared]
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.example.screentimeguard.monitor
+        CODE_SIGN_ENTITLEMENTS: MonitorExtension/MonitorExtension.entitlements
+    info:
+      path: MonitorExtension/Info.plist
+      properties:
+        CFBundleDisplayName: Monitor
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.deviceactivity.monitor-extension
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).DeviceActivityMonitorExtension
+
+  ShieldConfigExtension:
+    type: app-extension
+    platform: iOS
+    sources: [ShieldConfigExtension, Shared]
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.example.screentimeguard.shieldconfig
+        CODE_SIGN_ENTITLEMENTS: ShieldConfigExtension/ShieldConfigExtension.entitlements
+    info:
+      path: ShieldConfigExtension/Info.plist
+      properties:
+        CFBundleDisplayName: ShieldConfig
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.ManagedSettingsUI.shield-configuration-service
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).ShieldConfigurationExtension
+
+  ShieldActionExtension:
+    type: app-extension
+    platform: iOS
+    sources: [ShieldActionExtension, Shared]
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.example.screentimeguard.shieldaction
+        CODE_SIGN_ENTITLEMENTS: ShieldActionExtension/ShieldActionExtension.entitlements
+    info:
+      path: ShieldActionExtension/Info.plist
+      properties:
+        CFBundleDisplayName: ShieldAction
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.ManagedSettings.shield-action-service
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).ShieldActionExtension
