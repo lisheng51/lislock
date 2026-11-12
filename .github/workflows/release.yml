@@ -27,6 +27,15 @@ jobs:
             echo "::error::版本号格式应为 vX.Y.Z，收到：$TAG"; exit 1
           fi
 
+      - name: Check version is not released yet
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if gh release view "$TAG" -R "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
+            echo "::error::版本 $TAG 已经发布过了，请换一个更大的版本号（例如把最后一位 +1）"
+            exit 1
+          fi
+
       - uses: actions/checkout@v4
       - uses: actions/setup-java@v4
         with:
