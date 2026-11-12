@@ -1,0 +1,407 @@
+{
+  "version": 1,
+  "title": "Groep 7/8 – Wereldoriëntatie",
+  "description": "Aardrijkskunde, geschiedenis en natuur",
+  "questions": [
+    {
+      "q": "Hoeveel provincies heeft Nederland?",
+      "options": [
+        "12",
+        "11",
+        "10",
+        "13"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Wat is de hoofdstad van Nederland?",
+      "options": [
+        "Utrecht",
+        "Amsterdam",
+        "Den Haag",
+        "Rotterdam"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "In welke stad zetelen de regering en het parlement?",
+      "options": [
+        "Amsterdam",
+        "Utrecht",
+        "Den Haag",
+        "Rotterdam"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "Wat is de hoofdstad van Friesland?",
+      "options": [
+        "Leeuwarden",
+        "Sneek",
+        "Groningen",
+        "Assen"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Wat is de hoofdstad van Noord-Brabant?",
+      "options": [
+        "Breda",
+        "’s-Hertogenbosch",
+        "Eindhoven",
+        "Tilburg"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Wat is de hoofdstad van Limburg?",
+      "options": [
+        "Heerlen",
+        "Maastricht",
+        "Venlo",
+        "Roermond"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Wat is de hoofdstad van Gelderland?",
+      "options": [
+        "Arnhem",
+        "Zutphen",
+        "Apeldoorn",
+        "Nijmegen"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Wat is de hoofdstad van Zeeland?",
+      "options": [
+        "Goes",
+        "Vlissingen",
+        "Terneuzen",
+        "Middelburg"
+      ],
+      "answer": 3
+    },
+    {
+      "q": "Wat is de hoofdstad van Overijssel?",
+      "options": [
+        "Hengelo",
+        "Enschede",
+        "Deventer",
+        "Zwolle"
+      ],
+      "answer": 3
+    },
+    {
+      "q": "Wat is de hoofdstad van Noord-Holland?",
+      "options": [
+        "Haarlem",
+        "Alkmaar",
+        "Amsterdam",
+        "Zaandam"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Wat is de hoofdstad van Zuid-Holland?",
+      "options": [
+        "Den Haag",
+        "Leiden",
+        "Rotterdam",
+        "Delft"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Wat is de hoofdstad van Drenthe?",
+      "options": [
+        "Assen",
+        "Hoogeveen",
+        "Meppel",
+        "Emmen"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Wat is de hoofdstad van Flevoland?",
+      "options": [
+        "Dronten",
+        "Lelystad",
+        "Emmeloord",
+        "Almere"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Welke rivier stroomt vanuit Duitsland Nederland binnen?",
+      "options": [
+        "de Maas",
+        "de Amstel",
+        "de Rijn",
+        "de Schelde"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "Wat is het hoogste punt van Europees Nederland?",
+      "options": [
+        "de Vaalserberg",
+        "de Posbank",
+        "de Sint-Pietersberg",
+        "de Amerongse Berg"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "In welk jaar was de Watersnoodramp in Zeeland?",
+      "options": [
+        "1932",
+        "1916",
+        "1945",
+        "1953"
+      ],
+      "answer": 3
+    },
+    {
+      "q": "In welk jaar werd de Afsluitdijk gesloten?",
+      "options": [
+        "1900",
+        "1932",
+        "1975",
+        "1953"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Waarom zijn de Deltawerken gebouwd?",
+      "options": [
+        "om stroom op te wekken",
+        "om het land te beschermen tegen de zee",
+        "voor de scheepvaart naar Duitsland",
+        "om nieuwe stranden te maken"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Op welke dag vieren we Bevrijdingsdag?",
+      "options": [
+        "27 april",
+        "15 augustus",
+        "5 mei",
+        "4 mei"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "Op welke dag is de Nationale Dodenherdenking?",
+      "options": [
+        "5 mei",
+        "11 november",
+        "27 april",
+        "4 mei"
+      ],
+      "answer": 3
+    },
+    {
+      "q": "Op welke dag is Koningsdag?",
+      "options": [
+        "30 april",
+        "5 mei",
+        "27 april",
+        "5 december"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "Wie schreef een beroemd dagboek in het Achterhuis?",
+      "options": [
+        "Wilhelmina",
+        "Willem van Oranje",
+        "Annie M.G. Schmidt",
+        "Anne Frank"
+      ],
+      "answer": 3
+    },
+    {
+      "q": "Wie wordt de ‘Vader des Vaderlands’ genoemd?",
+      "options": [
+        "Karel de Grote",
+        "Willem van Oranje",
+        "Michiel de Ruyter",
+        "Johan van Oldenbarnevelt"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Tegen welk land vochten de Nederlanden in de Tachtigjarige Oorlog?",
+      "options": [
+        "Frankrijk",
+        "Engeland",
+        "Spanje",
+        "Duitsland"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "In welk jaar werd de VOC opgericht?",
+      "options": [
+        "1815",
+        "1648",
+        "1602",
+        "1492"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "Wie schilderde ‘De Nachtwacht’?",
+      "options": [
+        "Vincent van Gogh",
+        "Rembrandt",
+        "Johannes Vermeer",
+        "Piet Mondriaan"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Wie schilderde ‘Het meisje met de parel’?",
+      "options": [
+        "Johannes Vermeer",
+        "Rembrandt",
+        "Vincent van Gogh",
+        "Frans Hals"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Wie schilderde ‘Zonnebloemen’?",
+      "options": [
+        "Vincent van Gogh",
+        "Johannes Vermeer",
+        "Karel Appel",
+        "Rembrandt"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Sinds welk jaar betalen we in Nederland met euromunten en -biljetten?",
+      "options": [
+        "1999",
+        "2008",
+        "1995",
+        "2002"
+      ],
+      "answer": 3
+    },
+    {
+      "q": "In welk jaar zette de eerste mens voet op de maan?",
+      "options": [
+        "1979",
+        "1989",
+        "1969",
+        "1959"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "Hoeveel planeten heeft ons zonnestelsel?",
+      "options": [
+        "8",
+        "7",
+        "10",
+        "9"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Wat is de grootste planeet van ons zonnestelsel?",
+      "options": [
+        "Saturnus",
+        "Jupiter",
+        "Aarde",
+        "Mars"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Welk dier is een zoogdier?",
+      "options": [
+        "walvis",
+        "krokodil",
+        "pinguïn",
+        "haai"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Welk gas maken planten bij fotosynthese?",
+      "options": [
+        "stikstof",
+        "waterstof",
+        "koolstofdioxide",
+        "zuurstof"
+      ],
+      "answer": 3
+    },
+    {
+      "q": "Bij hoeveel graden Celsius bevriest water?",
+      "options": [
+        "0 °C",
+        "100 °C",
+        "−10 °C",
+        "4 °C"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Wat is de grootste oceaan ter wereld?",
+      "options": [
+        "de Indische Oceaan",
+        "de Atlantische Oceaan",
+        "de Noordelijke IJszee",
+        "de Stille Oceaan"
+      ],
+      "answer": 3
+    },
+    {
+      "q": "Wat is de hoofdstad van België?",
+      "options": [
+        "Antwerpen",
+        "Brussel",
+        "Brugge",
+        "Gent"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Wat is de hoofdstad van Duitsland?",
+      "options": [
+        "Keulen",
+        "Berlijn",
+        "München",
+        "Hamburg"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Welk orgaan pompt het bloed door je lichaam?",
+      "options": [
+        "de maag",
+        "het hart",
+        "de lever",
+        "de longen"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Welke energiebron is duurzaam?",
+      "options": [
+        "aardolie",
+        "aardgas",
+        "steenkool",
+        "windenergie"
+      ],
+      "answer": 3
+    }
+  ]
+}

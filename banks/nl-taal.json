@@ -1,0 +1,547 @@
+{
+  "version": 1,
+  "title": "Groep 7/8 – Taal",
+  "description": "Werkwoordspelling, spelling, woordsoorten, zinsontleding en spreekwoorden",
+  "questions": [
+    {
+      "q": "Kies de goede vorm: Hij ___ elke dag naar school. (fietsen)",
+      "options": [
+        "fietsdt",
+        "fiets",
+        "fietst",
+        "fietsd"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "Kies de goede vorm: Ik ___ dat een goed idee. (vinden)",
+      "options": [
+        "vind",
+        "vindt",
+        "vindd",
+        "vint"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Kies de goede vorm: Zij ___ het boek erg spannend. (vinden)",
+      "options": [
+        "vind",
+        "vinde",
+        "vint",
+        "vindt"
+      ],
+      "answer": 3
+    },
+    {
+      "q": "Kies de goede vorm: Jij ___ later vast dokter. (worden)",
+      "options": [
+        "word",
+        "wordt",
+        "wort",
+        "wordd"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Kies de goede vorm: ___ jij later ook dokter? (worden)",
+      "options": [
+        "Wort",
+        "Word",
+        "Wordt",
+        "Worrt"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Kies de goede vorm: ___ jij morgen ook naar het feest? (komen)",
+      "options": [
+        "Kommt",
+        "Kom",
+        "Komd",
+        "Komt"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Kies de goede vorm: Zij ___ meteen op de vraag. (antwoorden)",
+      "options": [
+        "antwoordt",
+        "antwoorde",
+        "antwoord",
+        "antwoort"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Kies de goede vorm: Gisteren ___ mijn vader de hele dag thuis. (werken)",
+      "options": [
+        "werkde",
+        "werkte",
+        "werkten",
+        "werktte"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Kies de goede vorm: Vroeger ___ wij in Utrecht. (wonen)",
+      "options": [
+        "woonden",
+        "woonten",
+        "woondden",
+        "woonde"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Kies de goede vorm: Ik ___ gisteren een uur op de bus. (wachten)",
+      "options": [
+        "wachte",
+        "wachtde",
+        "wachtten",
+        "wachtte"
+      ],
+      "answer": 3
+    },
+    {
+      "q": "Kies de goede vorm: Hij ___ vorige week naar Amsterdam. (fietsen)",
+      "options": [
+        "fietsten",
+        "fiets",
+        "fietste",
+        "fietsde"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "Kies de goede vorm: Het pakketje is gisteren ___. (bezorgen)",
+      "options": [
+        "bezorged",
+        "bezorgt",
+        "bezorgd",
+        "gebezorgd"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "Kies de goede vorm: De kat heeft de muis ___. (vangen)",
+      "options": [
+        "gevangen",
+        "gevangent",
+        "gevangt",
+        "gevangd"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Kies de goede vorm: Wij hebben de hele middag ___. (dansen)",
+      "options": [
+        "gedansd",
+        "gedansen",
+        "gedanste",
+        "gedanst"
+      ],
+      "answer": 3
+    },
+    {
+      "q": "Kies de goede vorm: Hij heeft zijn kamer ___. (verven)",
+      "options": [
+        "geverven",
+        "geverfdt",
+        "geverft",
+        "geverfd"
+      ],
+      "answer": 3
+    },
+    {
+      "q": "Welk werkwoord krijgt in de verleden tijd -te (’t kofschip)?",
+      "options": [
+        "horen",
+        "maken",
+        "bouwen",
+        "spelen"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Welk werkwoord krijgt in de verleden tijd -de?",
+      "options": [
+        "stoppen",
+        "leven",
+        "koken",
+        "lachen"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Welk woord is goed geschreven?",
+      "options": [
+        "geïriteerd",
+        "geirritteerd",
+        "geïrriteerd",
+        "geirriteerd"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "Welk woord is goed geschreven?",
+      "options": [
+        "enthousiast",
+        "entousiast",
+        "enthousiasd",
+        "enthausiast"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Welk woord is goed geschreven?",
+      "options": [
+        "sjoffeur",
+        "chauffeurr",
+        "chaufeur",
+        "chauffeur"
+      ],
+      "answer": 3
+    },
+    {
+      "q": "Welk woord is goed geschreven?",
+      "options": [
+        "pollitie",
+        "politie",
+        "poliesie",
+        "polietie"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Welk woord is goed geschreven?",
+      "options": [
+        "buro",
+        "bureu",
+        "burau",
+        "bureau"
+      ],
+      "answer": 3
+    },
+    {
+      "q": "Welk woord is goed geschreven?",
+      "options": [
+        "ideeën",
+        "ideeen",
+        "idee's",
+        "ideën"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Welk woord is goed geschreven?",
+      "options": [
+        "fiets-stalling",
+        "fietsenstaling",
+        "fietsenstalling",
+        "fietsestalling"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "Wat is het meervoud van ‘stad’?",
+      "options": [
+        "steden",
+        "staden",
+        "stads",
+        "stadden"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Wat is het meervoud van ‘schip’?",
+      "options": [
+        "schipen",
+        "schepen",
+        "schippen",
+        "schips"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Wat is het meervoud van ‘lid’?",
+      "options": [
+        "lidden",
+        "liden",
+        "lids",
+        "leden"
+      ],
+      "answer": 3
+    },
+    {
+      "q": "Wat is het meervoud van ‘koe’?",
+      "options": [
+        "koeën",
+        "koeien",
+        "koes",
+        "koeen"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Wat is het meervoud van ‘ei’?",
+      "options": [
+        "eien",
+        "eis",
+        "eieren",
+        "eiers"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "Wat is het verkleinwoord van ‘boom’?",
+      "options": [
+        "boomkje",
+        "boompje",
+        "boomtje",
+        "boomje"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Wat is het verkleinwoord van ‘koning’?",
+      "options": [
+        "koninkie",
+        "koninkje",
+        "koningje",
+        "koningtje"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Wat is het verkleinwoord van ‘bal’?",
+      "options": [
+        "balletje",
+        "balje",
+        "balltje",
+        "baltje"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Welk woord is een bijvoeglijk naamwoord in: ‘De grote hond blaft.’",
+      "options": [
+        "blaft",
+        "De",
+        "grote",
+        "hond"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "Wat is ‘snel’ in de zin: ‘Hij loopt snel.’",
+      "options": [
+        "zelfstandig naamwoord",
+        "werkwoord",
+        "bijwoord",
+        "bijvoeglijk naamwoord"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "Welk woord is een lidwoord?",
+      "options": [
+        "mooi",
+        "huis",
+        "het",
+        "lopen"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "Welk woord is een persoonlijk voornaamwoord?",
+      "options": [
+        "rennen",
+        "tafel",
+        "mooi",
+        "zij"
+      ],
+      "answer": 3
+    },
+    {
+      "q": "Welk woord is een voorzetsel?",
+      "options": [
+        "groen",
+        "onder",
+        "zingen",
+        "huis"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Welk woord is een zelfstandig naamwoord?",
+      "options": [
+        "vriendelijker",
+        "vriendelijk",
+        "vriendschap",
+        "vriendelijkst"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "Wat is het onderwerp in: ‘Mijn broer eet een appel.’",
+      "options": [
+        "Mijn broer",
+        "appel",
+        "een appel",
+        "eet"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Wat is de persoonsvorm in: ‘Morgen gaan wij naar het strand.’",
+      "options": [
+        "wij",
+        "Morgen",
+        "gaan",
+        "naar het strand"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "Wat is het lijdend voorwerp in: ‘Lisa leest een spannend boek.’",
+      "options": [
+        "een spannend boek",
+        "spannend",
+        "Lisa",
+        "leest"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Wat is het meewerkend voorwerp in: ‘Ik geef mijn moeder een bos bloemen.’",
+      "options": [
+        "Ik",
+        "een bos bloemen",
+        "mijn moeder",
+        "geef"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "Wat betekent ‘met de deur in huis vallen’?",
+      "options": [
+        "meteen zeggen waar het om gaat",
+        "te laat komen",
+        "onhandig zijn",
+        "onverwacht op bezoek komen"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Wat betekent ‘iemand een hart onder de riem steken’?",
+      "options": [
+        "iemand pijn doen",
+        "iemand verliefd maken",
+        "iemand moed inspreken",
+        "iemand straffen"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "Wat betekent ‘de kat uit de boom kijken’?",
+      "options": [
+        "iets stiekem doen",
+        "heel nieuwsgierig zijn",
+        "bang zijn voor katten",
+        "eerst afwachten wat er gebeurt"
+      ],
+      "answer": 3
+    },
+    {
+      "q": "Wat betekent ‘twee vliegen in één klap slaan’?",
+      "options": [
+        "twee dingen tegelijk bereiken",
+        "ruzie maken",
+        "heel hard werken",
+        "iets kapotmaken"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Wat betekent ‘boter op je hoofd hebben’?",
+      "options": [
+        "vergeetachtig zijn",
+        "het heel warm hebben",
+        "zelf doen wat je een ander verwijt",
+        "erg slim zijn"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "Wat betekent ‘door de mand vallen’?",
+      "options": [
+        "flauwvallen",
+        "betrapt worden",
+        "struikelen",
+        "verdwalen"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Wat betekent ‘een appeltje met iemand te schillen hebben’?",
+      "options": [
+        "iemand een cadeau willen geven",
+        "iemand willen helpen",
+        "samen gaan koken",
+        "nog iets met iemand moeten uitpraten"
+      ],
+      "answer": 3
+    },
+    {
+      "q": "Wat betekent ‘de spijker op zijn kop slaan’?",
+      "options": [
+        "iets kapotmaken",
+        "heel boos worden",
+        "precies zeggen hoe het zit",
+        "hard aan het werk zijn"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "Wat is het tegenovergestelde van ‘optimistisch’?",
+      "options": [
+        "pessimistisch",
+        "realistisch",
+        "enthousiast",
+        "vrolijk"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Wat betekent ‘vrijwillig’?",
+      "options": [
+        "uit eigen wil",
+        "verplicht",
+        "gratis",
+        "heel snel"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Welk woord betekent ongeveer hetzelfde als ‘beginnen’?",
+      "options": [
+        "eindigen",
+        "starten",
+        "wachten",
+        "stoppen"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Wat betekent ‘noodzakelijk’?",
+      "options": [
+        "nodig",
+        "toevallig",
+        "gevaarlijk",
+        "onbelangrijk"
+      ],
+      "answer": 0
+    }
+  ]
+}

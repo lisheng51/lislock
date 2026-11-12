@@ -69,6 +69,10 @@ enum OfficialBanks {
         ("生活常识", base + "general.json"),
         ("自然科学", base + "science.json"),
         ("数学应用题", base + "math.json"),
+        ("🇳🇱 Groep 7/8 – Alles", base + "groep78.json"),
+        ("🇳🇱 Groep 7/8 – Taal", base + "nl-taal.json"),
+        ("🇳🇱 Groep 7/8 – Rekenen", base + "nl-rekenen.json"),
+        ("🇳🇱 Groep 7/8 – Wereldoriëntatie", base + "nl-wereld.json"),
     ]
 }
 

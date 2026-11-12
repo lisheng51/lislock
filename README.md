@@ -139,7 +139,7 @@ open ScreenTimeGuard.xcodeproj
 
 ### 官方题库
 
-仓库的 [`banks/`](banks/) 目录里有现成的题库（英语单词、古诗词、生活常识、自然科学、数学应用题，共 222 题）。
+仓库的 [`banks/`](banks/) 目录里有现成的题库（英语单词、古诗词、生活常识、自然科学、数学应用题，以及荷兰小学 **groep 7/8** 的 Taal / Rekenen / Wereldoriëntatie，共 346 题）。
 在 App 的题库管理里点 **「选择官方题库」** 就能一键使用，例如全部题库：
 
 ```

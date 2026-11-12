@@ -1,0 +1,307 @@
+{
+  "version": 1,
+  "title": "Groep 7/8 – Rekenen",
+  "description": "Breuken, procenten, kommagetallen, meten, tijd en verhoudingen",
+  "questions": [
+    {
+      "q": "Hoeveel is 3/4 van 80?",
+      "options": [
+        "75",
+        "60",
+        "40",
+        "20"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Hoeveel is 25% van 240?",
+      "options": [
+        "60",
+        "96",
+        "24",
+        "48"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Hoeveel is 0,5 + 0,25?",
+      "options": [
+        "0,75",
+        "0,30",
+        "1,25",
+        "0,525"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Hoeveel is 2/3 + 1/6?",
+      "options": [
+        "5/6",
+        "1/2",
+        "3/6",
+        "3/9"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Hoeveel is 7,2 : 0,8?",
+      "options": [
+        "0,9",
+        "9",
+        "8",
+        "90"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Hoeveel is 12 × 15?",
+      "options": [
+        "150",
+        "165",
+        "180",
+        "170"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "Hoeveel is 1000 − 368?",
+      "options": [
+        "742",
+        "632",
+        "642",
+        "668"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Welk getal is het grootst?",
+      "options": [
+        "0,699",
+        "0,65",
+        "0,075",
+        "0,7"
+      ],
+      "answer": 3
+    },
+    {
+      "q": "Hoeveel procent is 3/5?",
+      "options": [
+        "30%",
+        "35%",
+        "60%",
+        "53%"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "Rond 4,567 af op één cijfer achter de komma.",
+      "options": [
+        "4,5",
+        "5",
+        "4,57",
+        "4,6"
+      ],
+      "answer": 3
+    },
+    {
+      "q": "1,5 kilogram is hoeveel gram?",
+      "options": [
+        "1500 gram",
+        "15 000 gram",
+        "15 gram",
+        "150 gram"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "2,5 kilometer is hoeveel meter?",
+      "options": [
+        "25 000 meter",
+        "250 meter",
+        "2500 meter",
+        "25 meter"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "3 deciliter is hoeveel milliliter?",
+      "options": [
+        "3000 ml",
+        "300 ml",
+        "30 ml",
+        "3 ml"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Hoeveel minuten zitten er in 2,5 uur?",
+      "options": [
+        "125",
+        "250",
+        "130",
+        "150"
+      ],
+      "answer": 3
+    },
+    {
+      "q": "Een broek kost €40. Je krijgt 25% korting. Hoeveel betaal je?",
+      "options": [
+        "€10",
+        "€35",
+        "€30",
+        "€15"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "Wat is het gemiddelde van 4, 6, 8 en 10?",
+      "options": [
+        "8",
+        "28",
+        "6",
+        "7"
+      ],
+      "answer": 3
+    },
+    {
+      "q": "Een rechthoek is 8 m lang en 4,5 m breed. Wat is de oppervlakte?",
+      "options": [
+        "25 m²",
+        "36 m²",
+        "32 m²",
+        "12,5 m²"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Een rechthoek is 8 m lang en 4,5 m breed. Wat is de omtrek?",
+      "options": [
+        "12,5 m",
+        "36 m",
+        "25 m",
+        "50 m"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "Een kubus heeft ribben van 3 cm. Wat is de inhoud?",
+      "options": [
+        "27 cm³",
+        "81 cm³",
+        "9 cm³",
+        "18 cm³"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Op een kaart met schaal 1 : 100 000 is een weg 4 cm. Hoe lang is die weg echt?",
+      "options": [
+        "400 m",
+        "40 km",
+        "4 km",
+        "40 m"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "Een trein vertrekt om 14.45 uur en rijdt 1 uur en 35 minuten. Hoe laat komt hij aan?",
+      "options": [
+        "16.20 uur",
+        "16.30 uur",
+        "15.20 uur",
+        "16.10 uur"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Voor 4 personen heb je 300 gram pasta nodig. Hoeveel heb je nodig voor 6 personen?",
+      "options": [
+        "600 gram",
+        "400 gram",
+        "450 gram",
+        "500 gram"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "Een auto rijdt 90 km per uur. Hoe ver komt hij in 20 minuten?",
+      "options": [
+        "30 km",
+        "18 km",
+        "60 km",
+        "45 km"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Welk getal is XIV in Romeinse cijfers?",
+      "options": [
+        "14",
+        "16",
+        "9",
+        "41"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Hoe heet een hoek van precies 90 graden?",
+      "options": [
+        "een rechte hoek",
+        "een gestrekte hoek",
+        "een stompe hoek",
+        "een scherpe hoek"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Het is −3 °C. De temperatuur stijgt 8 graden. Hoe warm is het nu?",
+      "options": [
+        "5 °C",
+        "11 °C",
+        "−5 °C",
+        "−11 °C"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Wat is 1/4 als kommagetal?",
+      "options": [
+        "0,25",
+        "0,4",
+        "1,4",
+        "0,14"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Een fiets kost €250 en wordt 10% duurder. Wat is de nieuwe prijs?",
+      "options": [
+        "€260",
+        "€275",
+        "€252,50",
+        "€350"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Hoeveel is 6 × 0,5?",
+      "options": [
+        "0,3",
+        "30",
+        "6,5",
+        "3"
+      ],
+      "answer": 3
+    },
+    {
+      "q": "Welke breuk is gelijk aan 4/8?",
+      "options": [
+        "1/2",
+        "3/8",
+        "2/8",
+        "1/4"
+      ],
+      "answer": 0
+    }
+  ]
+}

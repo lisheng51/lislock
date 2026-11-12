@@ -1,0 +1,1247 @@
+{
+  "version": 1,
+  "title": "Groep 7/8 – Alles",
+  "description": "Taal, rekenen en wereldoriëntatie voor groep 7/8（由 tools/build_banks.py 自动生成，请勿手动编辑）",
+  "questions": [
+    {
+      "q": "Hoeveel is 3/4 van 80?",
+      "options": [
+        "75",
+        "60",
+        "40",
+        "20"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Hoeveel is 25% van 240?",
+      "options": [
+        "60",
+        "96",
+        "24",
+        "48"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Hoeveel is 0,5 + 0,25?",
+      "options": [
+        "0,75",
+        "0,30",
+        "1,25",
+        "0,525"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Hoeveel is 2/3 + 1/6?",
+      "options": [
+        "5/6",
+        "1/2",
+        "3/6",
+        "3/9"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Hoeveel is 7,2 : 0,8?",
+      "options": [
+        "0,9",
+        "9",
+        "8",
+        "90"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Hoeveel is 12 × 15?",
+      "options": [
+        "150",
+        "165",
+        "180",
+        "170"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "Hoeveel is 1000 − 368?",
+      "options": [
+        "742",
+        "632",
+        "642",
+        "668"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Welk getal is het grootst?",
+      "options": [
+        "0,699",
+        "0,65",
+        "0,075",
+        "0,7"
+      ],
+      "answer": 3
+    },
+    {
+      "q": "Hoeveel procent is 3/5?",
+      "options": [
+        "30%",
+        "35%",
+        "60%",
+        "53%"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "Rond 4,567 af op één cijfer achter de komma.",
+      "options": [
+        "4,5",
+        "5",
+        "4,57",
+        "4,6"
+      ],
+      "answer": 3
+    },
+    {
+      "q": "1,5 kilogram is hoeveel gram?",
+      "options": [
+        "1500 gram",
+        "15 000 gram",
+        "15 gram",
+        "150 gram"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "2,5 kilometer is hoeveel meter?",
+      "options": [
+        "25 000 meter",
+        "250 meter",
+        "2500 meter",
+        "25 meter"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "3 deciliter is hoeveel milliliter?",
+      "options": [
+        "3000 ml",
+        "300 ml",
+        "30 ml",
+        "3 ml"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Hoeveel minuten zitten er in 2,5 uur?",
+      "options": [
+        "125",
+        "250",
+        "130",
+        "150"
+      ],
+      "answer": 3
+    },
+    {
+      "q": "Een broek kost €40. Je krijgt 25% korting. Hoeveel betaal je?",
+      "options": [
+        "€10",
+        "€35",
+        "€30",
+        "€15"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "Wat is het gemiddelde van 4, 6, 8 en 10?",
+      "options": [
+        "8",
+        "28",
+        "6",
+        "7"
+      ],
+      "answer": 3
+    },
+    {
+      "q": "Een rechthoek is 8 m lang en 4,5 m breed. Wat is de oppervlakte?",
+      "options": [
+        "25 m²",
+        "36 m²",
+        "32 m²",
+        "12,5 m²"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Een rechthoek is 8 m lang en 4,5 m breed. Wat is de omtrek?",
+      "options": [
+        "12,5 m",
+        "36 m",
+        "25 m",
+        "50 m"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "Een kubus heeft ribben van 3 cm. Wat is de inhoud?",
+      "options": [
+        "27 cm³",
+        "81 cm³",
+        "9 cm³",
+        "18 cm³"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Op een kaart met schaal 1 : 100 000 is een weg 4 cm. Hoe lang is die weg echt?",
+      "options": [
+        "400 m",
+        "40 km",
+        "4 km",
+        "40 m"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "Een trein vertrekt om 14.45 uur en rijdt 1 uur en 35 minuten. Hoe laat komt hij aan?",
+      "options": [
+        "16.20 uur",
+        "16.30 uur",
+        "15.20 uur",
+        "16.10 uur"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Voor 4 personen heb je 300 gram pasta nodig. Hoeveel heb je nodig voor 6 personen?",
+      "options": [
+        "600 gram",
+        "400 gram",
+        "450 gram",
+        "500 gram"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "Een auto rijdt 90 km per uur. Hoe ver komt hij in 20 minuten?",
+      "options": [
+        "30 km",
+        "18 km",
+        "60 km",
+        "45 km"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Welk getal is XIV in Romeinse cijfers?",
+      "options": [
+        "14",
+        "16",
+        "9",
+        "41"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Hoe heet een hoek van precies 90 graden?",
+      "options": [
+        "een rechte hoek",
+        "een gestrekte hoek",
+        "een stompe hoek",
+        "een scherpe hoek"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Het is −3 °C. De temperatuur stijgt 8 graden. Hoe warm is het nu?",
+      "options": [
+        "5 °C",
+        "11 °C",
+        "−5 °C",
+        "−11 °C"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Wat is 1/4 als kommagetal?",
+      "options": [
+        "0,25",
+        "0,4",
+        "1,4",
+        "0,14"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Een fiets kost €250 en wordt 10% duurder. Wat is de nieuwe prijs?",
+      "options": [
+        "€260",
+        "€275",
+        "€252,50",
+        "€350"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Hoeveel is 6 × 0,5?",
+      "options": [
+        "0,3",
+        "30",
+        "6,5",
+        "3"
+      ],
+      "answer": 3
+    },
+    {
+      "q": "Welke breuk is gelijk aan 4/8?",
+      "options": [
+        "1/2",
+        "3/8",
+        "2/8",
+        "1/4"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Kies de goede vorm: Hij ___ elke dag naar school. (fietsen)",
+      "options": [
+        "fietsdt",
+        "fiets",
+        "fietst",
+        "fietsd"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "Kies de goede vorm: Ik ___ dat een goed idee. (vinden)",
+      "options": [
+        "vind",
+        "vindt",
+        "vindd",
+        "vint"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Kies de goede vorm: Zij ___ het boek erg spannend. (vinden)",
+      "options": [
+        "vind",
+        "vinde",
+        "vint",
+        "vindt"
+      ],
+      "answer": 3
+    },
+    {
+      "q": "Kies de goede vorm: Jij ___ later vast dokter. (worden)",
+      "options": [
+        "word",
+        "wordt",
+        "wort",
+        "wordd"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Kies de goede vorm: ___ jij later ook dokter? (worden)",
+      "options": [
+        "Wort",
+        "Word",
+        "Wordt",
+        "Worrt"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Kies de goede vorm: ___ jij morgen ook naar het feest? (komen)",
+      "options": [
+        "Kommt",
+        "Kom",
+        "Komd",
+        "Komt"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Kies de goede vorm: Zij ___ meteen op de vraag. (antwoorden)",
+      "options": [
+        "antwoordt",
+        "antwoorde",
+        "antwoord",
+        "antwoort"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Kies de goede vorm: Gisteren ___ mijn vader de hele dag thuis. (werken)",
+      "options": [
+        "werkde",
+        "werkte",
+        "werkten",
+        "werktte"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Kies de goede vorm: Vroeger ___ wij in Utrecht. (wonen)",
+      "options": [
+        "woonden",
+        "woonten",
+        "woondden",
+        "woonde"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Kies de goede vorm: Ik ___ gisteren een uur op de bus. (wachten)",
+      "options": [
+        "wachte",
+        "wachtde",
+        "wachtten",
+        "wachtte"
+      ],
+      "answer": 3
+    },
+    {
+      "q": "Kies de goede vorm: Hij ___ vorige week naar Amsterdam. (fietsen)",
+      "options": [
+        "fietsten",
+        "fiets",
+        "fietste",
+        "fietsde"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "Kies de goede vorm: Het pakketje is gisteren ___. (bezorgen)",
+      "options": [
+        "bezorged",
+        "bezorgt",
+        "bezorgd",
+        "gebezorgd"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "Kies de goede vorm: De kat heeft de muis ___. (vangen)",
+      "options": [
+        "gevangen",
+        "gevangent",
+        "gevangt",
+        "gevangd"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Kies de goede vorm: Wij hebben de hele middag ___. (dansen)",
+      "options": [
+        "gedansd",
+        "gedansen",
+        "gedanste",
+        "gedanst"
+      ],
+      "answer": 3
+    },
+    {
+      "q": "Kies de goede vorm: Hij heeft zijn kamer ___. (verven)",
+      "options": [
+        "geverven",
+        "geverfdt",
+        "geverft",
+        "geverfd"
+      ],
+      "answer": 3
+    },
+    {
+      "q": "Welk werkwoord krijgt in de verleden tijd -te (’t kofschip)?",
+      "options": [
+        "horen",
+        "maken",
+        "bouwen",
+        "spelen"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Welk werkwoord krijgt in de verleden tijd -de?",
+      "options": [
+        "stoppen",
+        "leven",
+        "koken",
+        "lachen"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Welk woord is goed geschreven?",
+      "options": [
+        "geïriteerd",
+        "geirritteerd",
+        "geïrriteerd",
+        "geirriteerd"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "Welk woord is goed geschreven?",
+      "options": [
+        "enthousiast",
+        "entousiast",
+        "enthousiasd",
+        "enthausiast"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Welk woord is goed geschreven?",
+      "options": [
+        "sjoffeur",
+        "chauffeurr",
+        "chaufeur",
+        "chauffeur"
+      ],
+      "answer": 3
+    },
+    {
+      "q": "Welk woord is goed geschreven?",
+      "options": [
+        "pollitie",
+        "politie",
+        "poliesie",
+        "polietie"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Welk woord is goed geschreven?",
+      "options": [
+        "buro",
+        "bureu",
+        "burau",
+        "bureau"
+      ],
+      "answer": 3
+    },
+    {
+      "q": "Welk woord is goed geschreven?",
+      "options": [
+        "ideeën",
+        "ideeen",
+        "idee's",
+        "ideën"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Welk woord is goed geschreven?",
+      "options": [
+        "fiets-stalling",
+        "fietsenstaling",
+        "fietsenstalling",
+        "fietsestalling"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "Wat is het meervoud van ‘stad’?",
+      "options": [
+        "steden",
+        "staden",
+        "stads",
+        "stadden"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Wat is het meervoud van ‘schip’?",
+      "options": [
+        "schipen",
+        "schepen",
+        "schippen",
+        "schips"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Wat is het meervoud van ‘lid’?",
+      "options": [
+        "lidden",
+        "liden",
+        "lids",
+        "leden"
+      ],
+      "answer": 3
+    },
+    {
+      "q": "Wat is het meervoud van ‘koe’?",
+      "options": [
+        "koeën",
+        "koeien",
+        "koes",
+        "koeen"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Wat is het meervoud van ‘ei’?",
+      "options": [
+        "eien",
+        "eis",
+        "eieren",
+        "eiers"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "Wat is het verkleinwoord van ‘boom’?",
+      "options": [
+        "boomkje",
+        "boompje",
+        "boomtje",
+        "boomje"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Wat is het verkleinwoord van ‘koning’?",
+      "options": [
+        "koninkie",
+        "koninkje",
+        "koningje",
+        "koningtje"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Wat is het verkleinwoord van ‘bal’?",
+      "options": [
+        "balletje",
+        "balje",
+        "balltje",
+        "baltje"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Welk woord is een bijvoeglijk naamwoord in: ‘De grote hond blaft.’",
+      "options": [
+        "blaft",
+        "De",
+        "grote",
+        "hond"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "Wat is ‘snel’ in de zin: ‘Hij loopt snel.’",
+      "options": [
+        "zelfstandig naamwoord",
+        "werkwoord",
+        "bijwoord",
+        "bijvoeglijk naamwoord"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "Welk woord is een lidwoord?",
+      "options": [
+        "mooi",
+        "huis",
+        "het",
+        "lopen"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "Welk woord is een persoonlijk voornaamwoord?",
+      "options": [
+        "rennen",
+        "tafel",
+        "mooi",
+        "zij"
+      ],
+      "answer": 3
+    },
+    {
+      "q": "Welk woord is een voorzetsel?",
+      "options": [
+        "groen",
+        "onder",
+        "zingen",
+        "huis"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Welk woord is een zelfstandig naamwoord?",
+      "options": [
+        "vriendelijker",
+        "vriendelijk",
+        "vriendschap",
+        "vriendelijkst"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "Wat is het onderwerp in: ‘Mijn broer eet een appel.’",
+      "options": [
+        "Mijn broer",
+        "appel",
+        "een appel",
+        "eet"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Wat is de persoonsvorm in: ‘Morgen gaan wij naar het strand.’",
+      "options": [
+        "wij",
+        "Morgen",
+        "gaan",
+        "naar het strand"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "Wat is het lijdend voorwerp in: ‘Lisa leest een spannend boek.’",
+      "options": [
+        "een spannend boek",
+        "spannend",
+        "Lisa",
+        "leest"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Wat is het meewerkend voorwerp in: ‘Ik geef mijn moeder een bos bloemen.’",
+      "options": [
+        "Ik",
+        "een bos bloemen",
+        "mijn moeder",
+        "geef"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "Wat betekent ‘met de deur in huis vallen’?",
+      "options": [
+        "meteen zeggen waar het om gaat",
+        "te laat komen",
+        "onhandig zijn",
+        "onverwacht op bezoek komen"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Wat betekent ‘iemand een hart onder de riem steken’?",
+      "options": [
+        "iemand pijn doen",
+        "iemand verliefd maken",
+        "iemand moed inspreken",
+        "iemand straffen"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "Wat betekent ‘de kat uit de boom kijken’?",
+      "options": [
+        "iets stiekem doen",
+        "heel nieuwsgierig zijn",
+        "bang zijn voor katten",
+        "eerst afwachten wat er gebeurt"
+      ],
+      "answer": 3
+    },
+    {
+      "q": "Wat betekent ‘twee vliegen in één klap slaan’?",
+      "options": [
+        "twee dingen tegelijk bereiken",
+        "ruzie maken",
+        "heel hard werken",
+        "iets kapotmaken"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Wat betekent ‘boter op je hoofd hebben’?",
+      "options": [
+        "vergeetachtig zijn",
+        "het heel warm hebben",
+        "zelf doen wat je een ander verwijt",
+        "erg slim zijn"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "Wat betekent ‘door de mand vallen’?",
+      "options": [
+        "flauwvallen",
+        "betrapt worden",
+        "struikelen",
+        "verdwalen"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Wat betekent ‘een appeltje met iemand te schillen hebben’?",
+      "options": [
+        "iemand een cadeau willen geven",
+        "iemand willen helpen",
+        "samen gaan koken",
+        "nog iets met iemand moeten uitpraten"
+      ],
+      "answer": 3
+    },
+    {
+      "q": "Wat betekent ‘de spijker op zijn kop slaan’?",
+      "options": [
+        "iets kapotmaken",
+        "heel boos worden",
+        "precies zeggen hoe het zit",
+        "hard aan het werk zijn"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "Wat is het tegenovergestelde van ‘optimistisch’?",
+      "options": [
+        "pessimistisch",
+        "realistisch",
+        "enthousiast",
+        "vrolijk"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Wat betekent ‘vrijwillig’?",
+      "options": [
+        "uit eigen wil",
+        "verplicht",
+        "gratis",
+        "heel snel"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Welk woord betekent ongeveer hetzelfde als ‘beginnen’?",
+      "options": [
+        "eindigen",
+        "starten",
+        "wachten",
+        "stoppen"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Wat betekent ‘noodzakelijk’?",
+      "options": [
+        "nodig",
+        "toevallig",
+        "gevaarlijk",
+        "onbelangrijk"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Hoeveel provincies heeft Nederland?",
+      "options": [
+        "12",
+        "11",
+        "10",
+        "13"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Wat is de hoofdstad van Nederland?",
+      "options": [
+        "Utrecht",
+        "Amsterdam",
+        "Den Haag",
+        "Rotterdam"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "In welke stad zetelen de regering en het parlement?",
+      "options": [
+        "Amsterdam",
+        "Utrecht",
+        "Den Haag",
+        "Rotterdam"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "Wat is de hoofdstad van Friesland?",
+      "options": [
+        "Leeuwarden",
+        "Sneek",
+        "Groningen",
+        "Assen"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Wat is de hoofdstad van Noord-Brabant?",
+      "options": [
+        "Breda",
+        "’s-Hertogenbosch",
+        "Eindhoven",
+        "Tilburg"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Wat is de hoofdstad van Limburg?",
+      "options": [
+        "Heerlen",
+        "Maastricht",
+        "Venlo",
+        "Roermond"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Wat is de hoofdstad van Gelderland?",
+      "options": [
+        "Arnhem",
+        "Zutphen",
+        "Apeldoorn",
+        "Nijmegen"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Wat is de hoofdstad van Zeeland?",
+      "options": [
+        "Goes",
+        "Vlissingen",
+        "Terneuzen",
+        "Middelburg"
+      ],
+      "answer": 3
+    },
+    {
+      "q": "Wat is de hoofdstad van Overijssel?",
+      "options": [
+        "Hengelo",
+        "Enschede",
+        "Deventer",
+        "Zwolle"
+      ],
+      "answer": 3
+    },
+    {
+      "q": "Wat is de hoofdstad van Noord-Holland?",
+      "options": [
+        "Haarlem",
+        "Alkmaar",
+        "Amsterdam",
+        "Zaandam"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Wat is de hoofdstad van Zuid-Holland?",
+      "options": [
+        "Den Haag",
+        "Leiden",
+        "Rotterdam",
+        "Delft"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Wat is de hoofdstad van Drenthe?",
+      "options": [
+        "Assen",
+        "Hoogeveen",
+        "Meppel",
+        "Emmen"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Wat is de hoofdstad van Flevoland?",
+      "options": [
+        "Dronten",
+        "Lelystad",
+        "Emmeloord",
+        "Almere"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Welke rivier stroomt vanuit Duitsland Nederland binnen?",
+      "options": [
+        "de Maas",
+        "de Amstel",
+        "de Rijn",
+        "de Schelde"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "Wat is het hoogste punt van Europees Nederland?",
+      "options": [
+        "de Vaalserberg",
+        "de Posbank",
+        "de Sint-Pietersberg",
+        "de Amerongse Berg"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "In welk jaar was de Watersnoodramp in Zeeland?",
+      "options": [
+        "1932",
+        "1916",
+        "1945",
+        "1953"
+      ],
+      "answer": 3
+    },
+    {
+      "q": "In welk jaar werd de Afsluitdijk gesloten?",
+      "options": [
+        "1900",
+        "1932",
+        "1975",
+        "1953"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Waarom zijn de Deltawerken gebouwd?",
+      "options": [
+        "om stroom op te wekken",
+        "om het land te beschermen tegen de zee",
+        "voor de scheepvaart naar Duitsland",
+        "om nieuwe stranden te maken"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Op welke dag vieren we Bevrijdingsdag?",
+      "options": [
+        "27 april",
+        "15 augustus",
+        "5 mei",
+        "4 mei"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "Op welke dag is de Nationale Dodenherdenking?",
+      "options": [
+        "5 mei",
+        "11 november",
+        "27 april",
+        "4 mei"
+      ],
+      "answer": 3
+    },
+    {
+      "q": "Op welke dag is Koningsdag?",
+      "options": [
+        "30 april",
+        "5 mei",
+        "27 april",
+        "5 december"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "Wie schreef een beroemd dagboek in het Achterhuis?",
+      "options": [
+        "Wilhelmina",
+        "Willem van Oranje",
+        "Annie M.G. Schmidt",
+        "Anne Frank"
+      ],
+      "answer": 3
+    },
+    {
+      "q": "Wie wordt de ‘Vader des Vaderlands’ genoemd?",
+      "options": [
+        "Karel de Grote",
+        "Willem van Oranje",
+        "Michiel de Ruyter",
+        "Johan van Oldenbarnevelt"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Tegen welk land vochten de Nederlanden in de Tachtigjarige Oorlog?",
+      "options": [
+        "Frankrijk",
+        "Engeland",
+        "Spanje",
+        "Duitsland"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "In welk jaar werd de VOC opgericht?",
+      "options": [
+        "1815",
+        "1648",
+        "1602",
+        "1492"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "Wie schilderde ‘De Nachtwacht’?",
+      "options": [
+        "Vincent van Gogh",
+        "Rembrandt",
+        "Johannes Vermeer",
+        "Piet Mondriaan"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Wie schilderde ‘Het meisje met de parel’?",
+      "options": [
+        "Johannes Vermeer",
+        "Rembrandt",
+        "Vincent van Gogh",
+        "Frans Hals"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Wie schilderde ‘Zonnebloemen’?",
+      "options": [
+        "Vincent van Gogh",
+        "Johannes Vermeer",
+        "Karel Appel",
+        "Rembrandt"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Sinds welk jaar betalen we in Nederland met euromunten en -biljetten?",
+      "options": [
+        "1999",
+        "2008",
+        "1995",
+        "2002"
+      ],
+      "answer": 3
+    },
+    {
+      "q": "In welk jaar zette de eerste mens voet op de maan?",
+      "options": [
+        "1979",
+        "1989",
+        "1969",
+        "1959"
+      ],
+      "answer": 2
+    },
+    {
+      "q": "Hoeveel planeten heeft ons zonnestelsel?",
+      "options": [
+        "8",
+        "7",
+        "10",
+        "9"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Wat is de grootste planeet van ons zonnestelsel?",
+      "options": [
+        "Saturnus",
+        "Jupiter",
+        "Aarde",
+        "Mars"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Welk dier is een zoogdier?",
+      "options": [
+        "walvis",
+        "krokodil",
+        "pinguïn",
+        "haai"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Welk gas maken planten bij fotosynthese?",
+      "options": [
+        "stikstof",
+        "waterstof",
+        "koolstofdioxide",
+        "zuurstof"
+      ],
+      "answer": 3
+    },
+    {
+      "q": "Bij hoeveel graden Celsius bevriest water?",
+      "options": [
+        "0 °C",
+        "100 °C",
+        "−10 °C",
+        "4 °C"
+      ],
+      "answer": 0
+    },
+    {
+      "q": "Wat is de grootste oceaan ter wereld?",
+      "options": [
+        "de Indische Oceaan",
+        "de Atlantische Oceaan",
+        "de Noordelijke IJszee",
+        "de Stille Oceaan"
+      ],
+      "answer": 3
+    },
+    {
+      "q": "Wat is de hoofdstad van België?",
+      "options": [
+        "Antwerpen",
+        "Brussel",
+        "Brugge",
+        "Gent"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Wat is de hoofdstad van Duitsland?",
+      "options": [
+        "Keulen",
+        "Berlijn",
+        "München",
+        "Hamburg"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Welk orgaan pompt het bloed door je lichaam?",
+      "options": [
+        "de maag",
+        "het hart",
+        "de lever",
+        "de longen"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "Welke energiebron is duurzaam?",
+      "options": [
+        "aardolie",
+        "aardgas",
+        "steenkool",
+        "windenergie"
+      ],
+      "answer": 3
+    }
+  ]
+}

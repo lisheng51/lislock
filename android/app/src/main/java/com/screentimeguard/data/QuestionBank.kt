@@ -71,6 +71,10 @@ object OfficialBanks {
         "生活常识" to BASE + "general.json",
         "自然科学" to BASE + "science.json",
         "数学应用题" to BASE + "math.json",
+        "🇳🇱 Groep 7/8 – Alles" to BASE + "groep78.json",
+        "🇳🇱 Groep 7/8 – Taal" to BASE + "nl-taal.json",
+        "🇳🇱 Groep 7/8 – Rekenen" to BASE + "nl-rekenen.json",
+        "🇳🇱 Groep 7/8 – Wereldoriëntatie" to BASE + "nl-wereld.json",
     )
 }
 
