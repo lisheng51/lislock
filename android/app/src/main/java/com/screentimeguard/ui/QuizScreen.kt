@@ -46,13 +46,13 @@ fun QuizScreen(
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.Center,
     ) {
-        Text("⏰ 已使用超过 $limitMinutes 分钟", style = MaterialTheme.typography.headlineSmall)
+        Text("⏰ Je zit al meer dan $limitMinutes minuten op je telefoon", style = MaterialTheme.typography.headlineSmall)
         Spacer(Modifier.height(8.dp))
-        Text("答对 ${questions.size} 道题才能继续使用", style = MaterialTheme.typography.bodyLarge)
+        Text("Beantwoord ${questions.size} vragen goed om verder te gaan", style = MaterialTheme.typography.bodyLarge)
         if (level > 0) {
             Spacer(Modifier.height(4.dp))
             Text(
-                "今天已多次超时，难度提升到 Lv.$level",
+                "Vandaag al vaker over de tijd – de vragen zijn moeilijker (niveau $level)",
                 color = MaterialTheme.colorScheme.error,
                 style = MaterialTheme.typography.bodyMedium,
             )
@@ -63,7 +63,7 @@ fun QuizScreen(
             modifier = Modifier.fillMaxWidth(),
         )
         Spacer(Modifier.height(8.dp))
-        Text("第 ${index + 1} / ${questions.size} 题")
+        Text("Vraag ${index + 1} van ${questions.size}")
         Spacer(Modifier.height(32.dp))
         Text(q.text, fontSize = 26.sp, textAlign = TextAlign.Center)
         Spacer(Modifier.height(32.dp))
@@ -75,7 +75,7 @@ fun QuizScreen(
                         message = null
                         if (index + 1 == questions.size) onPassed() else index++
                     } else {
-                        message = "答错了，换一组题重新开始"
+                        message = "Helaas, fout! Je krijgt nieuwe vragen."
                         onWrong()
                     }
                 },
@@ -97,10 +97,10 @@ fun PassedScreen(onClose: () -> Unit) {
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.Center,
     ) {
-        Text("🎉 全部答对！", style = MaterialTheme.typography.headlineMedium)
+        Text("🎉 Alles goed!", style = MaterialTheme.typography.headlineMedium)
         Spacer(Modifier.height(8.dp))
-        Text("计时已重新开始，注意休息眼睛哦")
+        Text("De tijd begint opnieuw. Vergeet niet je ogen af en toe rust te geven!")
         Spacer(Modifier.height(24.dp))
-        Button(onClick = onClose) { Text("继续使用") }
+        Button(onClick = onClose) { Text("Verder") }
     }
 }

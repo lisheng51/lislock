@@ -25,11 +25,11 @@ final class ShieldConfigurationExtension: ShieldConfigurationDataSource {
         ShieldConfiguration(
             backgroundBlurStyle: .systemMaterial,
             icon: UIImage(systemName: "hourglass"),
-            title: .init(text: "已使用超过 \(SharedStore.limitMinutes) 分钟", color: .label),
-            subtitle: .init(text: "回答 \(SharedStore.questionCount) 道题即可解锁", color: .secondaryLabel),
-            primaryButtonLabel: .init(text: "去答题解锁", color: .white),
+            title: .init(text: "Je zit al meer dan \(SharedStore.limitMinutes) minuten op je telefoon", color: .label),
+            subtitle: .init(text: "Beantwoord \(SharedStore.unlockQuestionCount) vragen goed om verder te gaan", color: .secondaryLabel),
+            primaryButtonLabel: .init(text: "Vragen beantwoorden", color: .white),
             primaryButtonBackgroundColor: .systemBlue,
-            secondaryButtonLabel: .init(text: "休息一下", color: .systemBlue)
+            secondaryButtonLabel: .init(text: "Even pauze", color: .systemBlue)
         )
     }
 }

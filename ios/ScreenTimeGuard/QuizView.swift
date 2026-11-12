@@ -13,22 +13,19 @@ struct QuizView: View {
 
     private static func newRound() -> [Question] {
         let level = SharedStore.difficultyLevel
-        return QuizGenerator.generate(
-            count: QuizGenerator.questionCount(base: SharedStore.questionCount, level: level),
-            level: level
-        )
+        return QuizGenerator.generate(count: SharedStore.unlockQuestionCount, level: level)
     }
 
     var body: some View {
         VStack(spacing: 20) {
-            Text("⏰ 已使用超过 \(SharedStore.limitMinutes) 分钟").font(.title2.bold())
-            Text("答对 \(questions.count) 道题才能继续使用").foregroundStyle(.secondary)
+            Text("⏰ Je zit al meer dan \(SharedStore.limitMinutes) minuten op je telefoon").font(.title2.bold())
+            Text("Beantwoord \(questions.count) vragen goed om verder te gaan").foregroundStyle(.secondary)
             if level > 0 {
-                Text("今天已多次超时，难度提升到 Lv.\(level)").font(.footnote).foregroundStyle(.red)
+                Text("Vandaag al vaker over de tijd – de vragen zijn moeilijker (niveau \(level))").font(.footnote).foregroundStyle(.red)
             }
 
             ProgressView(value: Double(index), total: Double(questions.count))
-            Text("第 \(index + 1) / \(questions.count) 题").font(.footnote)
+            Text("Vraag \(index + 1) van \(questions.count)").font(.footnote)
 
             Text(questions[index].text)
                 .font(.system(size: 30, weight: .semibold))
@@ -46,7 +43,7 @@ struct QuizView: View {
 
             if ParentPin.isSet {
                 Spacer()
-                Button("家长解锁") { askPin = true }
+                Button("Ouder · 家长解锁") { askPin = true }
             }
         }
         .padding(24)
@@ -61,7 +58,7 @@ struct QuizView: View {
             message = nil
             if index + 1 == questions.count { onPassed() } else { index += 1 }
         } else {
-            message = "答错了，换一组题重新开始"
+            message = "Helaas, fout! Je krijgt nieuwe vragen."
             questions = QuizView.newRound()
             index = 0
         }

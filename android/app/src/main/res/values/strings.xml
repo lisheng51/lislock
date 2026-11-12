@@ -2,6 +2,6 @@
 <resources>
     <string name="app_name">屏幕时间守卫</string>
     <string name="channel_guard">使用时间守护</string>
-    <string name="notif_running">今日已使用 %1$d / %2$d 分钟</string>
-    <string name="notif_locked">已超时，请回答问题解锁</string>
+    <string name="notif_running">Gebruikt: %1$d van %2$d minuten</string>
+    <string name="notif_locked">De tijd is om – beantwoord de vragen om verder te gaan</string>
 </resources>

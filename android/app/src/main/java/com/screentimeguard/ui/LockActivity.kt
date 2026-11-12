@@ -77,7 +77,7 @@ class LockActivity : ComponentActivity() {
                 TextButton(
                     onClick = { askPin = true },
                     modifier = Modifier.align(Alignment.CenterHorizontally).padding(16.dp),
-                ) { Text("家长解锁") }
+                ) { Text("Ouder · 家长解锁") }
             }
         }
         if (askPin) {

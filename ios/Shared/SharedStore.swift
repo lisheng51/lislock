@@ -29,6 +29,9 @@ enum SharedStore {
     /// 当前难度：今天第 1 次超时为 Lv.0，之后每次 +1，最高 Lv.3
     static var difficultyLevel: Int { min(max(lockCountToday - 1, 0), 3) }
 
+    /// 本次解锁实际要答的题数（基础题数 + 难度，最多 10）
+    static var unlockQuestionCount: Int { min(questionCount + difficultyLevel, 10) }
+
     /// 记录一次超时
     static func recordLock() {
         defaults.set(lockCountToday + 1, forKey: Key.lockCount)

@@ -33,8 +33,8 @@ final class ShieldActionExtension: ShieldActionDelegate {
 
     private func sendQuizNotification(_ done: @escaping () -> Void) {
         let content = UNMutableNotificationContent()
-        content.title = "点我开始答题解锁"
-        content.body = "答对 \(SharedStore.questionCount) 道题后即可继续使用"
+        content.title = "Tik hier om de vragen te beantwoorden"
+        content.body = "Beantwoord \(SharedStore.unlockQuestionCount) vragen goed om verder te gaan"
         content.sound = .default
         content.userInfo = ["route": "quiz"]
         let request = UNNotificationRequest(identifier: "quiz", content: content, trigger: nil)
