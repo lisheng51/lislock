@@ -18,6 +18,7 @@ import android.os.SystemClock
 import android.provider.Settings
 import com.screentimeguard.R
 import com.screentimeguard.data.Prefs
+import com.screentimeguard.data.RemoteBankSync
 import com.screentimeguard.ui.LockActivity
 import com.screentimeguard.ui.MainActivity
 
@@ -79,6 +80,9 @@ class GuardService : Service() {
         // 上限保护：设备休眠导致 tick 间隔变长时，不把休眠时间算进去
         val delta = (now - lastTick).coerceAtMost(TICK_MS * 3)
         lastTick = now
+
+        // 远程题库：到时间才会真正下载（成功 6 小时一次，失败 30 分钟重试）
+        RemoteBankSync.refreshIfStale(this)
 
         val inUse = power.isInteractive && !keyguard.isKeyguardLocked
         if (!inUse) return

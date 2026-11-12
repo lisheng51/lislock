@@ -19,7 +19,10 @@ struct RootView: View {
                 SettingsView()
             }
         }
-        .onChange(of: scenePhase) { _ in locked = SharedStore.locked }
+        .onChange(of: scenePhase) { phase in
+            locked = SharedStore.locked
+            if phase == .active { Task { await QuestionBankStore.shared.refreshIfStale() } }
+        }
         .onReceive(NotificationCenter.default.publisher(for: .openQuiz)) { _ in locked = SharedStore.locked }
     }
 }
@@ -73,6 +76,15 @@ struct SettingsView: View {
                     }
                     Button("选择要限制的 App（\(itemCount) 项）") { showPicker = true }
                         .familyActivityPicker(isPresented: $showPicker, selection: $selection)
+                }
+                .disabled(!canEdit)
+
+                Section {
+                    NavigationLink("管理题库") { QuestionBankView() }
+                } header: {
+                    Text("题库")
+                } footer: {
+                    Text("添加自定义题目，或从网址加载远程题库。")
                 }
                 .disabled(!canEdit)
 

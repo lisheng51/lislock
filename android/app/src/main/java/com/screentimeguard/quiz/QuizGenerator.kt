@@ -1,31 +1,37 @@
 package com.screentimeguard.quiz
 
 import android.content.Context
-import org.json.JSONObject
+import com.screentimeguard.data.QuestionBank
 import kotlin.random.Random
 
 data class Question(val text: String, val options: List<String>, val answerIndex: Int)
 
 /**
- * 生成解锁题：算术题 + shared/questions.json 中的题库题随机混合。
+ * 生成解锁题：算术题 + 题库题（内置 / 自定义 / 远程）随机混合。
+ * 题库设置里打开"只出题库题"时，不出算术题。
  *
  * 难度递增：同一天里每多超时一次，难度 +1（最高 [MAX_LEVEL]）。
  *  - Lv.0  两位数加减、一位数乘法
  *  - Lv.1  三位数加减、两位数 × 一位数，题数 +1
  *  - Lv.2  两位数 × 两位数、三个数连加减，题数 +2，题库题减少
- *  - Lv.3  a × b + c 混合运算，题数 +3，只出算术题
+ *  - Lv.3  a × b + c 混合运算，题数 +3，题库题最少
  */
 class QuizGenerator(context: Context, private val random: Random = Random.Default) {
 
-    private val bank: List<Question> = loadBank(context)
+    private val settings = QuestionBank(context)
+    private val bank: List<Question> = settings.all().map { Question(it.q, it.options, it.answer) }
 
     fun generate(count: Int, level: Int = 0): List<Question> {
         val lv = level.coerceIn(0, MAX_LEVEL)
-        // 难度越高，题库常识题占比越低：50% → 35% → 20% → 0%
-        val bankChance = listOf(0.5, 0.35, 0.2, 0.0)[lv]
+        // 难度越高，题库题占比越低（算术题越多）：50% → 40% → 30% → 20%
+        val bankChance = if (settings.onlyBank) 1.0 else listOf(0.5, 0.4, 0.3, 0.2)[lv]
+        // 只出题库题时尽量不重复
+        val pool = bank.shuffled(random).toMutableList()
         return List(count) {
-            if (bank.isNotEmpty() && random.nextDouble() < bankChance) bank.random(random).shuffled()
-            else arithmetic(lv)
+            if (bank.isNotEmpty() && random.nextDouble() < bankChance) {
+                if (pool.isEmpty()) pool += bank.shuffled(random)
+                pool.removeAt(0).shuffled()
+            } else arithmetic(lv)
         }
     }
 
@@ -72,16 +78,6 @@ class QuizGenerator(context: Context, private val random: Random = Random.Defaul
         val opts = options.shuffled(random)
         return copy(options = opts, answerIndex = opts.indexOf(correct))
     }
-
-    private fun loadBank(context: Context): List<Question> = runCatching {
-        val json = context.assets.open("questions.json").bufferedReader().use { it.readText() }
-        val arr = JSONObject(json).getJSONArray("questions")
-        (0 until arr.length()).map { i ->
-            val o = arr.getJSONObject(i)
-            val opts = o.getJSONArray("options")
-            Question(o.getString("q"), (0 until opts.length()).map(opts::getString), o.getInt("answer"))
-        }
-    }.getOrDefault(emptyList())
 
     companion object {
         const val MAX_LEVEL = 3

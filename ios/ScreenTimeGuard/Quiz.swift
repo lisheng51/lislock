@@ -7,21 +7,9 @@ struct Question: Identifiable {
     let answerIndex: Int
 }
 
-/// 生成解锁题：算术题 + shared/questions.json 题库题随机混合（与 Android 规则一致）。
+/// 生成解锁题：算术题 + 题库题（内置 / 自定义 / 远程）随机混合（与 Android 规则一致）。
+/// 题库设置里打开"只出题库题"时，不出算术题。
 enum QuizGenerator {
-    private struct Bank: Decodable {
-        struct Item: Decodable { let q: String; let options: [String]; let answer: Int }
-        let questions: [Item]
-    }
-
-    private static let bank: [Question] = {
-        guard let url = Bundle.main.url(forResource: "questions", withExtension: "json"),
-              let data = try? Data(contentsOf: url),
-              let bank = try? JSONDecoder().decode(Bank.self, from: data)
-        else { return [] }
-        return bank.questions.map { Question(text: $0.q, options: $0.options, answerIndex: $0.answer) }
-    }()
-
     static let maxLevel = 3
 
     /// 实际题数 = 基础题数 + 难度等级（最多 10 题）
@@ -31,12 +19,18 @@ enum QuizGenerator {
 
     /// 难度递增（与 Android 一致）：
     ///  Lv.0 两位数加减、一位数乘法；Lv.1 三位数加减、两位数×一位数；
-    ///  Lv.2 两位数×两位数、三数连加减；Lv.3 a×b+c，只出算术题
+    ///  Lv.2 两位数×两位数、三数连加减；Lv.3 a×b+c。难度越高题库题越少
     static func generate(count: Int, level: Int = 0) -> [Question] {
+        let store = QuestionBankStore.shared
+        let bank = store.allQuestions.map { Question(text: $0.q, options: $0.options, answerIndex: $0.answer) }
         let lv = min(max(level, 0), maxLevel)
-        let bankChance = [0.5, 0.35, 0.2, 0.0][lv]
+        let bankChance = store.onlyBank ? 1.0 : [0.5, 0.4, 0.3, 0.2][lv]
+        var pool = bank.shuffled()
         return (0..<count).map { _ in
-            if let q = bank.randomElement(), Double.random(in: 0..<1) < bankChance { return shuffled(q) }
+            if !bank.isEmpty, Double.random(in: 0..<1) < bankChance {
+                if pool.isEmpty { pool = bank.shuffled() }
+                return shuffled(pool.removeFirst())
+            }
             return arithmetic(level: lv)
         }
     }

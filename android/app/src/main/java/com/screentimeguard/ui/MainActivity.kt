@@ -151,6 +151,14 @@ class MainActivity : ComponentActivity() {
                 }
             }
 
+            Spacer(Modifier.height(16.dp))
+            Text("题库", style = MaterialTheme.typography.titleMedium)
+            Text("添加自定义题目，或从网址加载远程题库。")
+            OutlinedButton(
+                onClick = { startActivity(Intent(this@MainActivity, QuestionBankActivity::class.java)) },
+                enabled = canEdit,
+            ) { Text("管理题库") }
+
             Spacer(Modifier.height(24.dp))
             Text("自上次解锁已使用：${prefs.usedMillis / 60_000} 分钟")
             Spacer(Modifier.height(16.dp))
