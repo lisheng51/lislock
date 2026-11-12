@@ -32,6 +32,7 @@ import com.screentimeguard.quiz.Question
 @Composable
 fun QuizScreen(
     limitMinutes: Int,
+    level: Int,
     questions: List<Question>,
     onWrong: () -> Unit,
     onPassed: () -> Unit,
@@ -48,6 +49,14 @@ fun QuizScreen(
         Text("⏰ 已使用超过 $limitMinutes 分钟", style = MaterialTheme.typography.headlineSmall)
         Spacer(Modifier.height(8.dp))
         Text("答对 ${questions.size} 道题才能继续使用", style = MaterialTheme.typography.bodyLarge)
+        if (level > 0) {
+            Spacer(Modifier.height(4.dp))
+            Text(
+                "今天已多次超时，难度提升到 Lv.$level",
+                color = MaterialTheme.colorScheme.error,
+                style = MaterialTheme.typography.bodyMedium,
+            )
+        }
         Spacer(Modifier.height(24.dp))
         LinearProgressIndicator(
             progress = { index / questions.size.toFloat() },

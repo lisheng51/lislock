@@ -13,6 +13,26 @@ enum SharedStore {
         static let questionCount = "questionCount"
         static let selection = "selection"
         static let locked = "locked"
+        static let lockDate = "lockDate"
+        static let lockCount = "lockCount"
+    }
+
+    private static var today: String {
+        let f = DateFormatter(); f.dateFormat = "yyyy-MM-dd"; return f.string(from: Date())
+    }
+
+    /// 今天第几次超时，跨天自动清零
+    static var lockCountToday: Int {
+        defaults.string(forKey: Key.lockDate) == today ? defaults.integer(forKey: Key.lockCount) : 0
+    }
+
+    /// 当前难度：今天第 1 次超时为 Lv.0，之后每次 +1，最高 Lv.3
+    static var difficultyLevel: Int { min(max(lockCountToday - 1, 0), 3) }
+
+    /// 记录一次超时
+    static func recordLock() {
+        defaults.set(lockCountToday + 1, forKey: Key.lockCount)
+        defaults.set(today, forKey: Key.lockDate)
     }
 
     /// 使用上限（分钟），默认 60
@@ -54,6 +74,7 @@ enum Shield {
         store.shield.applications = s.applicationTokens.isEmpty ? nil : s.applicationTokens
         store.shield.applicationCategories = s.categoryTokens.isEmpty ? nil : .specific(s.categoryTokens)
         store.shield.webDomains = s.webDomainTokens.isEmpty ? nil : s.webDomainTokens
+        if !SharedStore.locked { SharedStore.recordLock() }
         SharedStore.locked = true
     }
 

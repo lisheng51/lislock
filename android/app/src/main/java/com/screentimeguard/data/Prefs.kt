@@ -33,6 +33,24 @@ class Prefs(context: Context) {
 
     val limitMillis: Long get() = limitMinutes * 60_000L
 
+    /** 今天第几次超时（用于难度递增），跨天自动清零 */
+    val lockCountToday: Int
+        get() = if (sp.getString(KEY_LOCK_DATE, null) == today()) sp.getInt(KEY_LOCK_COUNT, 0) else 0
+
+    /** 当前难度：今天第 1 次超时为 Lv.0，之后每次 +1，最高 Lv.3 */
+    val difficultyLevel: Int get() = (lockCountToday - 1).coerceIn(0, 3)
+
+    /** 进入锁定状态，并记录今天的超时次数 */
+    fun lock() {
+        sp.edit()
+            .putBoolean(KEY_LOCKED, true)
+            .putString(KEY_LOCK_DATE, today())
+            .putInt(KEY_LOCK_COUNT, lockCountToday + 1)
+            .apply()
+    }
+
+    private fun today() = java.time.LocalDate.now().toString()
+
     /** 答题通过：清零计时并解除锁定 */
     fun unlock() {
         sp.edit().putLong(KEY_USED, 0L).putBoolean(KEY_LOCKED, false).apply()
@@ -44,5 +62,7 @@ class Prefs(context: Context) {
         const val KEY_USED = "used_millis"
         const val KEY_LOCKED = "locked"
         const val KEY_ENABLED = "guard_enabled"
+        const val KEY_LOCK_DATE = "lock_date"
+        const val KEY_LOCK_COUNT = "lock_count"
     }
 }

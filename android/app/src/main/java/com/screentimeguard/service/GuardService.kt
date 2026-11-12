@@ -90,7 +90,7 @@ class GuardService : Service() {
 
         prefs.usedMillis += delta
         if (prefs.usedMillis >= prefs.limitMillis) {
-            prefs.locked = true
+            prefs.lock()
             showLockScreen()
         }
         updateNotification()

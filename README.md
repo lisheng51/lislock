@@ -9,6 +9,8 @@
 - 超时后全屏锁定，必须答对 N 道题（默认 3 道）才能解锁
 - 题目类型：算术题 + 自定义问答题（`shared/questions.json`）
 - 解锁后重新开始计时
+- **家长密码**：设置后，修改设置 / 停止守护都要输密码；锁定页可用密码直接解锁；连续输错 5 次锁 60 秒
+- **难度递增**：同一天每多超时一次难度 +1（最高 Lv.3）——题数变多、数字变大、常识题变少
 - 开机自动恢复监控（Android）
 
 ## 为什么是两套原生代码？
@@ -42,6 +44,41 @@ ios/                       iOS 工程（XcodeGen 生成 Xcode 工程，SwiftUI�
   ShieldActionExtension/   屏蔽界面按钮 → 发通知引导去答题
   Shared/                  App Group 共享的设置 / 题目逻辑
 ```
+
+## 在 Windows 电脑上测试
+
+> ⚠️ **iOS 版无法在 Windows 上编译或运行**（必须 Mac + Xcode + iPhone 真机）。
+> Windows 上可以完整测试 **Android 版**。仓库的 GitHub Actions 会在 macOS 上帮你检查 iOS 代码能否编译通过。
+
+### 方式 A：直接下载 APK 装到安卓手机（最快）
+
+1. 打开仓库的 **Actions** 页 → 最新一次 *Build* → 底部 **Artifacts** 下载 `lislock-debug-apk`
+2. 解压得到 `app-debug.apk`，发到安卓手机上安装（需允许"安装未知来源应用"）
+
+### 方式 B：Android Studio + 模拟器
+
+1. 安装 [Android Studio](https://developer.android.com/studio)（自带 JDK 和 Android SDK）
+2. 安装 [Git for Windows](https://git-scm.com/download/win)，然后 `git clone https://github.com/lisheng51/lislock.git`
+3. Android Studio → **Open** → 选择 `lislock\android` 文件夹，等待 Gradle 同步完成
+4. **Device Manager** → 新建一个模拟器（如 Pixel 8，系统镜像 API 34）
+5. 点绿色 ▶ **Run**
+
+命令行也可以（PowerShell，在 `lislock\android` 目录下）：
+
+```powershell
+.\gradlew.bat assembleDebug
+adb install -r app\build\outputs\apk\debug\app-debug.apk
+```
+
+### 测试步骤
+
+1. 授予三项权限 → 把**使用上限调到 1 分钟** → 点"开始守护"
+2. 随便用 1 分钟 → 应弹出答题锁定页；按 Home 键离开，几秒后会被拉回来
+3. 故意答错 → 整组换题；全部答对 → 解锁，计时清零
+4. 再等 1 分钟 → 第二次锁定，显示"难度提升到 Lv.1"，题目变难变多
+5. 设置家长密码 → 返回桌面再进 App，设置页应被锁定；锁定页出现"家长解锁"按钮
+6. 连续输错 5 次密码 → 应提示等待 60 秒
+7. 重启模拟器 → 守护自动恢复
 
 ## 运行
 
@@ -77,6 +114,7 @@ open ScreenTimeGuard.xcodeproj
 ## 路线图
 
 - [ ] 按 App 分别设置时长（Android 用 UsageStatsManager）
-- [ ] 家长模式：解锁密码 / 远程管理
+- [x] 家长密码
+- [ ] 远程管理 / 防卸载（Android 设备管理员）
 - [ ] 每日总时长统计图表
-- [ ] 题目难度随超时次数递增
+- [x] 题目难度随超时次数递增
