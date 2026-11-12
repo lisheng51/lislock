@@ -137,16 +137,20 @@ open ScreenTimeGuard.xcodeproj
 - 最多 2000 题，文件不超过 1 MB；格式错误时 App 会提示是第几题出错，并保留旧题库
 - 出题时选项顺序会被打乱，不用担心孩子记位置
 
-### 远程题库放在哪里？
+### 官方题库
 
-任何能通过 **https 直接返回 JSON 原文**的地址都可以，例如：
+仓库的 [`banks/`](banks/) 目录里有现成的题库（英语单词、古诗词、生活常识、自然科学、数学应用题，共 222 题）。
+在 App 的题库管理里点 **「选择官方题库」** 就能一键使用，例如全部题库：
 
-- **GitHub Gist**（推荐，免费）：新建 gist → 粘贴 JSON → 创建后点 **Raw**，复制网址。
-  要更新题目时编辑 gist，网址里去掉 commit 哈希（形如 `https://gist.githubusercontent.com/<用户>/<id>/raw/questions.json`），App 就总能拿到最新版
-- 公开 GitHub 仓库里的文件（点 Raw 得到 `raw.githubusercontent.com/...` 网址）
-- 自己的服务器、对象存储（OSS / COS / S3）等
+```
+https://raw.githubusercontent.com/lisheng51/lislock/main/banks/all.json
+```
 
-> 本仓库是私有的，所以 `raw.githubusercontent.com/lisheng51/lislock/...` 这类网址**手机上访问不了**，请用 Gist 或其他公开地址。
+想加题：编辑 `banks/` 里的 JSON → 运行 `python3 tools/build_banks.py` → 推送。详见 [banks/README.md](banks/README.md)。
+
+### 用自己的远程题库
+
+任何能通过 **https 直接返回 JSON 原文**的地址都可以，例如 GitHub Gist（点 Raw 复制网址）、公开仓库里的文件、自己的服务器或对象存储。
 
 ## 路线图
 

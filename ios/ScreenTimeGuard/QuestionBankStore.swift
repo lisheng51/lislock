@@ -59,6 +59,19 @@ struct BankError: LocalizedError {
     var errorDescription: String? { message }
 }
 
+/// 仓库 banks/ 目录里的官方题库（公开 GitHub 仓库的 raw 网址）
+enum OfficialBanks {
+    private static let base = "https://raw.githubusercontent.com/lisheng51/lislock/main/banks/"
+    static let list: [(name: String, url: String)] = [
+        ("全部题库（合并）", base + "all.json"),
+        ("英语单词", base + "english.json"),
+        ("古诗词", base + "poetry.json"),
+        ("生活常识", base + "general.json"),
+        ("自然科学", base + "science.json"),
+        ("数学应用题", base + "math.json"),
+    ]
+}
+
 /// 题库：内置（App 包里的 questions.json）+ 自定义 + 远程（从网址下载的缓存）。
 final class QuestionBankStore: ObservableObject {
     static let shared = QuestionBankStore()

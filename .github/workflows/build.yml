@@ -6,6 +6,14 @@ on:
   workflow_dispatch:
 
 jobs:
+  banks:
+    name: Question banks
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate banks and check all.json is up to date
+        run: python3 tools/build_banks.py --check
+
   android:
     name: Android APK
     runs-on: ubuntu-latest

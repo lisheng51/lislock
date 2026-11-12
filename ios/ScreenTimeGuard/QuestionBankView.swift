@@ -25,6 +25,14 @@ struct QuestionBankView: View {
             }
 
             Section {
+                Menu("选择官方题库…") {
+                    ForEach(OfficialBanks.list, id: \.url) { bank in
+                        Button(bank.name) {
+                            store.remoteAddress = bank.url
+                            Task { await store.refreshRemote() }
+                        }
+                    }
+                }
                 TextField("https://…/questions.json", text: $store.remoteAddress)
                     .keyboardType(.URL)
                     .textInputAutocapitalization(.never)

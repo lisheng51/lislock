@@ -44,6 +44,7 @@ import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import com.screentimeguard.data.BankJson
 import com.screentimeguard.data.BankQuestion
+import com.screentimeguard.data.OfficialBanks
 import com.screentimeguard.data.QuestionBank
 import com.screentimeguard.data.RemoteBankSync
 
@@ -83,9 +84,22 @@ class QuestionBankActivity : ComponentActivity() {
         var loading by remember { mutableStateOf(false) }
         var editing by remember { mutableStateOf<Editing?>(null) }
         var importing by remember { mutableStateOf(false) }
+        var pickingOfficial by remember { mutableStateOf(false) }
         val builtinCount = remember { bank.builtin().size }
 
         fun saveCustom() = bank.saveCustom(custom.toList())
+
+        fun updateRemote() {
+            bank.remoteUrl = url
+            loading = true
+            remoteStatus = "正在下载…"
+            RemoteBankSync.refresh(this@QuestionBankActivity) { result ->
+                loading = false
+                remoteCount = bank.remote().size
+                remoteStatus = remoteStatusText()
+                result.onSuccess { toast("已加载 $it 道题") }
+            }
+        }
 
         LazyColumn(Modifier.fillMaxSize().padding(horizontal = 20.dp)) {
             item {
@@ -107,7 +121,7 @@ class QuestionBankActivity : ComponentActivity() {
                     "填一个 https 网址，内容是题库 JSON（格式见 README）。开启守护后每 6 小时自动更新一次。",
                     style = MaterialTheme.typography.bodySmall,
                 )
-                Spacer(Modifier.height(8.dp))
+                TextButton(onClick = { pickingOfficial = true }) { Text("选择官方题库…") }
                 OutlinedTextField(
                     value = url,
                     onValueChange = { url = it },
@@ -120,17 +134,7 @@ class QuestionBankActivity : ComponentActivity() {
                 Row {
                     Button(
                         enabled = !loading && url.isNotBlank(),
-                        onClick = {
-                            bank.remoteUrl = url
-                            loading = true
-                            remoteStatus = "正在下载…"
-                            RemoteBankSync.refresh(this@QuestionBankActivity) { result ->
-                                loading = false
-                                remoteCount = bank.remote().size
-                                remoteStatus = remoteStatusText()
-                                result.onSuccess { toast("已加载 $it 道题") }
-                            }
-                        },
+                        onClick = { updateRemote() },
                     ) { Text(if (loading) "更新中…" else "保存并更新") }
                     Spacer(Modifier.width(8.dp))
                     if (remoteCount > 0 || bank.remoteUrl.isNotBlank()) {
@@ -194,6 +198,29 @@ class QuestionBankActivity : ComponentActivity() {
                     editing = null
                 },
                 onDismiss = { editing = null },
+            )
+        }
+
+        if (pickingOfficial) {
+            AlertDialog(
+                onDismissRequest = { pickingOfficial = false },
+                title = { Text("选择官方题库") },
+                text = {
+                    Column {
+                        OfficialBanks.list.forEach { (name, link) ->
+                            TextButton(
+                                onClick = {
+                                    pickingOfficial = false
+                                    url = link
+                                    updateRemote()
+                                },
+                                modifier = Modifier.fillMaxWidth(),
+                            ) { Text(name, Modifier.fillMaxWidth()) }
+                        }
+                    }
+                },
+                confirmButton = {},
+                dismissButton = { TextButton(onClick = { pickingOfficial = false }) { Text("取消") } },
             )
         }
 

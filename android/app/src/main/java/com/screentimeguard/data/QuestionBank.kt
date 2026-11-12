@@ -61,6 +61,19 @@ object BankJson {
     }
 }
 
+/** 仓库 banks/ 目录里的官方题库（公开 GitHub 仓库的 raw 网址） */
+object OfficialBanks {
+    private const val BASE = "https://raw.githubusercontent.com/lisheng51/lislock/main/banks/"
+    val list = listOf(
+        "全部题库（合并）" to BASE + "all.json",
+        "英语单词" to BASE + "english.json",
+        "古诗词" to BASE + "poetry.json",
+        "生活常识" to BASE + "general.json",
+        "自然科学" to BASE + "science.json",
+        "数学应用题" to BASE + "math.json",
+    )
+}
+
 /**
  * 题库来源：内置（assets/questions.json）+ 自定义（家长在 App 里添加）+ 远程（从网址下载的缓存）。
  */
