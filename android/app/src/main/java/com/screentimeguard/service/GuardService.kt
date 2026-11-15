@@ -25,8 +25,9 @@ import com.screentimeguard.ui.MainActivity
 /**
  * 常驻前台服务：
  *  - 每 TICK_MS 检查一次：屏幕亮着且已解锁 → 把这段时间累加到 usedMillis
- *  - usedMillis ≥ 上限 → 进入锁定状态，拉起 LockActivity
- *  - 锁定期间如果用户切走（按 Home 等），下一个 tick 会再次拉起 LockActivity
+ *  - usedMillis ≥ 上限 → 进入锁定状态，显示全屏锁定悬浮层（LockOverlay）
+ *  - 悬浮层盖在所有 App 之上，Home 键 / 最近任务都关不掉
+ *  - 没有悬浮窗权限时，退化为全屏通知，点通知打开 LockActivity
  */
 class GuardService : Service() {
 
@@ -35,6 +36,7 @@ class GuardService : Service() {
     private lateinit var power: PowerManager
     private lateinit var keyguard: KeyguardManager
     private var lastTick = 0L
+    private lateinit var overlay: LockOverlay
 
     private val tick = object : Runnable {
         override fun run() {
@@ -48,19 +50,27 @@ class GuardService : Service() {
         prefs = Prefs(this)
         power = getSystemService(PowerManager::class.java)
         keyguard = getSystemService(KeyguardManager::class.java)
+        overlay = LockOverlay(this)
         createChannel()
     }
 
     override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int {
-        if (!prefs.guardEnabled) {
-            stopSelf()
-            return START_NOT_STICKY
-        }
+        // 必须先 startForeground：用 startForegroundService 启动后不调用会被系统判定崩溃
         val notif = buildNotification()
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.UPSIDE_DOWN_CAKE) {
             startForeground(NOTIF_ID, notif, ServiceInfo.FOREGROUND_SERVICE_TYPE_SPECIAL_USE)
         } else {
             startForeground(NOTIF_ID, notif)
+        }
+        if (!prefs.guardEnabled) {
+            stopSelf()
+            return START_NOT_STICKY
+        }
+        isRunning = true
+        if (intent?.action == ACTION_LOCK_NOW) {
+            // 设置页的"立即测试锁定"：直接锁定，不计入当天超时次数（不影响难度）
+            prefs.locked = true
+            showLockScreen()
         }
         handler.removeCallbacks(tick)
         lastTick = SystemClock.elapsedRealtime()
@@ -70,6 +80,8 @@ class GuardService : Service() {
 
     override fun onDestroy() {
         handler.removeCallbacks(tick)
+        overlay.hide()
+        isRunning = false
         super.onDestroy()
     }
 
@@ -101,17 +113,10 @@ class GuardService : Service() {
     }
 
     private fun showLockScreen() {
-        if (LockActivity.isVisible) return
-        // Android 10+ 后台启动 Activity 需要"悬浮窗"权限作为豁免
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q && !Settings.canDrawOverlays(this)) {
-            // 没有悬浮窗权限时退化为全屏通知
-            getSystemService(NotificationManager::class.java).notify(NOTIF_ID, buildNotification())
-            return
-        }
-        startActivity(
-            Intent(this, LockActivity::class.java)
-                .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_REORDER_TO_FRONT)
-        )
+        // 首选：全屏悬浮层（不受 Android 14/15 后台启动 Activity 的限制）
+        val shown = overlay.show()
+        // 兜底：没有悬浮窗权限时，用全屏通知提醒，点通知打开 LockActivity
+        lastLockError = if (shown) null else if (!Settings.canDrawOverlays(this)) "没有悬浮窗权限" else "系统拒绝显示悬浮层"
         updateNotification()
     }
 
@@ -148,12 +153,28 @@ class GuardService : Service() {
     }
 
     companion object {
+        /** 服务是否在运行（设置页显示状态用） */
+        @Volatile var isRunning = false
+            private set
+
+        /** 上次锁定失败的原因（设置页显示，便于排查） */
+        @Volatile var lastLockError: String? = null
+            private set
+
+        private const val ACTION_LOCK_NOW = "com.screentimeguard.LOCK_NOW"
         private const val TICK_MS = 5_000L
         private const val NOTIF_ID = 1
         private const val CHANNEL_ID = "guard"
 
         fun start(context: Context) {
             context.startForegroundService(Intent(context, GuardService::class.java))
+        }
+
+        /** 立即锁定（测试用） */
+        fun lockNow(context: Context) {
+            context.startForegroundService(
+                Intent(context, GuardService::class.java).setAction(ACTION_LOCK_NOW)
+            )
         }
 
         fun stop(context: Context) {

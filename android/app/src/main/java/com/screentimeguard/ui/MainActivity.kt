@@ -28,6 +28,7 @@ import androidx.compose.material3.Slider
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableFloatStateOf
 import androidx.compose.runtime.mutableIntStateOf
@@ -40,6 +41,7 @@ import androidx.compose.ui.unit.dp
 import com.screentimeguard.data.ParentPin
 import com.screentimeguard.data.Prefs
 import com.screentimeguard.service.GuardService
+import kotlinx.coroutines.delay
 
 /**
  * 设置页：使用上限、题目数量、权限引导、家长密码、开始/停止守护。
@@ -69,6 +71,8 @@ class MainActivity : ComponentActivity() {
     override fun onResume() {
         super.onResume()
         refresh++ // 从系统设置返回后刷新权限状态
+        // 守护开着但服务被系统杀掉了：自动拉起
+        if (prefs.guardEnabled && !GuardService.isRunning) GuardService.start(this)
     }
 
     override fun onStop() {
@@ -160,7 +164,21 @@ class MainActivity : ComponentActivity() {
             ) { Text("管理题库") }
 
             Spacer(Modifier.height(24.dp))
-            Text("自上次解锁已使用：${prefs.usedMillis / 60_000} 分钟")
+            Text("运行状态", style = MaterialTheme.typography.titleMedium)
+            val running = GuardService.isRunning
+            Text(
+                when {
+                    !enabled -> "⏸ 守护未开启"
+                    running && prefs.locked -> "🔒 已锁定，等待答题"
+                    running -> "✅ 守护运行中"
+                    else -> "⚠️ 守护已开启但服务没在运行（可能被系统关掉了），请点「停止守护」再「开始守护」"
+                }
+            )
+            Text("已使用：${prefs.usedMillis / 1000 / 60} 分 ${prefs.usedMillis / 1000 % 60} 秒 / 上限 ${prefs.limitMinutes} 分钟")
+            Text("计时只在屏幕亮着且已解锁时进行", style = MaterialTheme.typography.bodySmall)
+            GuardService.lastLockError?.let {
+                Text("上次锁定失败：$it", color = MaterialTheme.colorScheme.error)
+            }
             Spacer(Modifier.height(16.dp))
             Button(
                 onClick = {
@@ -171,6 +189,19 @@ class MainActivity : ComponentActivity() {
                 enabled = canEdit && (enabled || (overlayOk && notifOk)),
                 modifier = Modifier.fillMaxWidth(),
             ) { Text(if (enabled) "停止守护" else "开始守护") }
+            OutlinedButton(
+                onClick = { GuardService.lockNow(this@MainActivity) },
+                enabled = canEdit && enabled,
+                modifier = Modifier.fillMaxWidth(),
+            ) { Text("立即测试锁定（不计入难度）") }
+        }
+
+        // 每秒刷新运行状态和已用时间
+        LaunchedEffect(Unit) {
+            while (true) {
+                delay(1000)
+                refresh++
+            }
         }
 
         when (dialog) {
